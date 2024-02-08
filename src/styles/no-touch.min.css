@@ -32,9 +32,11 @@ button:focus {
   text-align: center;
   font-size: 5.5rem;
   position: absolute;
+  color: #fff;
 }
 .Header p {
   margin-top: 125px;
+  color: #fff;
 }
 .particle {
   position: absolute!;

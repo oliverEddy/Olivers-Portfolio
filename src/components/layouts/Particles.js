@@ -1,18 +1,31 @@
 import React, { useState, useEffect } from 'react';
+import Bitday1 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-1.png';
+import Bitday2 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-2.png';
+import Bitday3 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-3.png';
+import Bitday4 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-4.png';
+import Bitday5 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-5.png';
+import Bitday6 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-6.png';
+import Bitday7 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-7.png';
+import Bitday8 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-8.png';
+import Bitday9 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-9.png';
+import Bitday10 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-10.png';
+import Bitday11 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-11.png';
+import Bitday12 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-12.png';
+
 
 const imageValueMap = {
-  'http://i.imgur.com/qexylYA.png': 0,
-  'http://i.imgur.com/cRvIYLJ.png': 1,
-  'http://i.imgur.com/UusvZC8.png': 2,
-  'http://i.imgur.com/URjIjZS.png': 3,
-  'http://i.imgur.com/Fy7kANa.png': 4,
-  'http://i.imgur.com/e2lvJ8q.png': 5,
-  'http://i.imgur.com/JEslGSe.png': 6,
-  'http://i.imgur.com/v2h0qzb.png': 7,
-  'http://i.imgur.com/xyfqUsX.png': 8,
-  'http://i.imgur.com/XbIlhvL.png': 9,
-  'http://i.imgur.com/xDAIc6P.png': 10,
-  'http://i.imgur.com/kaCxCBi.png': 11,
+  [Bitday1]: 0,
+  [Bitday2]: 1,
+  [Bitday3]: 2,
+  [Bitday4]: 3,
+  [Bitday5]: 4,
+  [Bitday6]: 5,
+  [Bitday7]: 6,
+  [Bitday8]: 7,
+  [Bitday9]: 8,
+  [Bitday10]: 9,
+  [Bitday11]: 10,
+  [Bitday12]: 11,
 };
 
 const imageUrls = Object.keys(imageValueMap);
