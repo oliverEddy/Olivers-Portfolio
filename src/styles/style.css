@@ -8,3 +8,6 @@
     --primary-color: #95a9de;
     --hover-color:  #f697ad;
 }
+body {
+    overscroll-behavior-y: none;
+  }

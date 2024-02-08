@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import Bitday1 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-1.png';
-import Bitday2 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-2.png';
-import Bitday3 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-3.png';
-import Bitday4 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-4.png';
-import Bitday5 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-5.png';
-import Bitday6 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-6.png';
-import Bitday7 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-7.png';
-import Bitday8 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-8.png';
-import Bitday9 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-9.png';
-import Bitday10 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-10.png';
-import Bitday11 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-11.png';
-import Bitday12 from '/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-12.png';
-
+import React, { useState, useEffect } from "react";
+import Bitday1 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-1.png";
+import Bitday2 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-2.png";
+import Bitday3 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-3.png";
+import Bitday4 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-4.png";
+import Bitday5 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-5.png";
+import Bitday6 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-6.png";
+import Bitday7 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-7.png";
+import Bitday8 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-8.png";
+import Bitday9 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-9.png";
+import Bitday10 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-10.png";
+import Bitday11 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-11.png";
+import Bitday12 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-12.png";
 
 const imageValueMap = {
   [Bitday1]: 0,
@@ -56,21 +55,29 @@ const ParticlesBackground = () => {
   };
 
   const handlePrevImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + imageUrls.length) % imageUrls.length);
+    setCurrentImageIndex(
+      (prevIndex) => (prevIndex - 1 + imageUrls.length) % imageUrls.length
+    );
   };
 
   return (
     <div className={`particle bg-${currentImageIndex}`}>
-      <div className="image-container" style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
-        <img
-          src={imageUrls[currentImageIndex]}
-          alt={`background-${currentImageIndex}`}
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-        />
-      </div>
+      <div
+        className="image-container"
+        style={{
+          width: "100vw",
+          height: "100vh",
+          overflow: "hidden",
+          backgroundImage: `url(${imageUrls[currentImageIndex]})`,
+          backgroundPosition: "left top",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          overscrollBehavior: "none";
+        }}
+      ></div>
       <div className="arrow-buttons">
-        <button onClick={handlePrevImage}>{'<'}</button>
-        <button onClick={handleNextImage}>{'>'}</button>
+        <button onClick={handlePrevImage}>{"<"}</button>
+        <button onClick={handleNextImage}>{">"}</button>
       </div>
     </div>
   );
