@@ -9,11 +9,12 @@ const animation = {
 };
 // Change your display name on tha landing display
 const header = {
-  name: "a Human",
+  name: "I'm Oliver Eddy",
 };
 const background = {
   // Options: Snow or Particle
   type: "Snow",
+  
 };
 // Write a para about yourself here
 // To update your image, go to './styles/images.css'
@@ -130,7 +131,7 @@ const projects = [
 // To Add a Activity, copy any one below and paste it after the last comma and increment the id's Miscellaneous number
 const section4Title = "Miscellaneous";
 const miscellaneous = [
-  {
+{
     // Add image in './styles/images.css' in #misc1
     id: "misc1",
     name: "Miscellaneous 1",
