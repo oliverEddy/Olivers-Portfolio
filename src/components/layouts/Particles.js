@@ -72,7 +72,7 @@ const ParticlesBackground = () => {
           backgroundPosition: "left top",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          overscrollBehavior: "none";
+          overscrollBehavior: "none"
         }}
       ></div>
       <div className="arrow-buttons">
