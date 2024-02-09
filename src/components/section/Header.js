@@ -7,7 +7,7 @@ const Header = () => {
     <div>
       <div className="Header">
         <h1>{`${header.name}`}</h1>
-        <p className="line-1">and this is my portfolio... </p>
+        <p className="line-1">Welcome to my portfolio showcase !</p>
 
         <HeaderButton />
       </div>

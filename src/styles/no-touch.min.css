@@ -29,7 +29,6 @@ button:focus {
   
 }
 .Header h1 {
-  color: #000;
   text-align: center;
   font-size: 5.5rem;
   position: absolute;
@@ -37,10 +36,14 @@ button:focus {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 1rem;
   margin-bottom: 9rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 .Header p {
   margin-top: 125px;
   color: #fff;
+ text-align: center;
+  padding: 1rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 .particle {
   position: absolute!;
@@ -154,7 +157,7 @@ button:focus {
 }
 .skill__square i:hover,
 .skill__square svg:hover {
-  color: #ff4753 !important;
+  color: #f697ad !important;
 }
 .third {
   width: 75%;
@@ -444,9 +447,8 @@ input:checked + .slider:before {
 .line-1 {
   position: relative;
   top: 10%;
-  width: 12em;
-  margin: 0 auto;
-
+  
+  
   font-size: 180%;
   text-align: center;
  
