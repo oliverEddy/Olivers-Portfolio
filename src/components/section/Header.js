@@ -20,9 +20,9 @@ const Header = () => {
         <div className="switch">
           {/* Use FontAwesome icon here */}
           <i className="fas fa-info-circle"></i>
-          <p>Like the background images? Pretty cool right, they change based on the time of day! Bitday is a project put together by Reddit user BloodyMarvllous, checkout out the official Bitday page below.<br />
+          <p>Check out the inspiration behind these alternating backgrounds!<br />
             {/* Replace <a> with <button> */}
-            <button onClick={handleClick} className="link-style-button">Bitday</button>
+            <button onClick={handleClick} className="link-style-button">BitDay Live</button>
           </p>
         </div>
       </div>
