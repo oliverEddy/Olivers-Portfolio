@@ -50,16 +50,6 @@ const ParticlesBackground = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-  };
-
-  const handlePrevImage = () => {
-    setCurrentImageIndex(
-      (prevIndex) => (prevIndex - 1 + imageUrls.length) % imageUrls.length
-    );
-  };
-
   return (
     <div className={`particle bg-${currentImageIndex}`}>
       <div
@@ -75,11 +65,8 @@ const ParticlesBackground = () => {
           overscrollBehavior: "none"
         }}
       ></div>
-      <div className="arrow-buttons">
-        <button onClick={handlePrevImage}>{"<"}</button>
-        <button onClick={handleNextImage}>{">"}</button>
-      </div>
-    </div>
+    
+</div>
   );
 };
 
