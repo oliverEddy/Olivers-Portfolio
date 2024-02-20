@@ -9,7 +9,7 @@ const animation = {
 };
 // Change your display name on tha landing display
 const header = {
-  name: "Hi! I'm Oliver",
+  name: "Hello, I'm Oliver",
 };
 const background = {
   // Options: Snow or Particle
@@ -162,10 +162,11 @@ const miscellaneous = [
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
 // If you hacve the link already, paste it in the contactUrl below
-const section5Title = "Reach out! ";
+const section5Title = "Reach out ! ";
 const contact = {
   pitch:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris nunc congue nisi vitae.",
+    "What ever it might be about, feel free to reach out! Simply fill in the email form and hit send, ill be sure to get back to you!",
+    
   copyright: "Kaustubh Mishra",
   contactUrl: "",
 };
