@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import Bitday1 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-1.png";
-import Bitday2 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-2.png";
-import Bitday3 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-3.png";
-import Bitday4 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-4.png";
-import Bitday5 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-5.png";
-import Bitday6 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-6.png";
-import Bitday7 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-7.png";
-import Bitday8 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-8.png";
-import Bitday9 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-9.png";
-import Bitday10 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-10.png";
-import Bitday11 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-11.png";
-import Bitday12 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday-12.png";
+import Bitday1 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--1.png";
+import Bitday2 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--2.png";
+import Bitday3 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--3.png";
+import Bitday4 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--4.png";
+import Bitday5 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--5.png";
+import Bitday6 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--6.png";
+import Bitday7 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--7.png";
+import Bitday8 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--8.png";
+import Bitday9 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--9.png";
+import Bitday10 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--10.png";
+import Bitday11 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--11.png";
+import Bitday12 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--12.png";
 
 const imageValueMap = {
   [Bitday1]: 0,
