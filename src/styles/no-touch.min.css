@@ -58,6 +58,7 @@ button:focus {
 }
 .skills {
   padding: 3%;
+  margin-top: 4rem;
 }
 .progress-block {
   padding: 10px 0;
@@ -77,11 +78,13 @@ button:focus {
 }
 .effect2 {
   position: relative;
-  width: 70%;
+  width: 85%;
+  height: 85vh;
   background: #fff;
   padding: 5%;
-  margin: 10% auto;
+  margin: 5% auto;
   border-bottom: solid 1px #777 !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .effect2:after,
 .effect2:before {
@@ -116,14 +119,16 @@ button:focus {
   background-color: #fff;
   background-size: contain;
   background-repeat: no-repeat;
+  height: 35vh;
+  margin-left: 8.33%;
+
 
 }
 .Photo.inverse-dark {
   background-color: #000;
 }
 .about-text {
-  width: 80%;
-  padding: 2%;
+
 }
 .red-line {
   color: var(--primary-color);
@@ -435,10 +440,12 @@ position: absolute;
   outline: 0;
 }
 
-/* Reverse the animation on hover */
-.see:hover::before {
-  animation-play-state: paused; /* Pauses the animation */
+.see:hover {
+  background-color: var(--hover-color);
+
 }
+/* Reverse the animation on hover */
+
 .see::before, .see::after {
   z-index: 1; /* Lower than the text */
 }

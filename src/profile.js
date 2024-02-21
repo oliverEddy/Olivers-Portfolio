@@ -21,7 +21,8 @@ const background = {
 const section2title = "About Me";
 const about = {
   paragraph:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris nunc congue nisi vitae suscipit tellus mauris a diam. ",
+    "I am a Junior software developer, I began my developer journey in 2022 with Developers Institute. During my first year at the Developers Institute, I learned the fundamentals, like version control, effective communication, and how to build web apps using the PERN and MERN stacks. In my second year, I moved onto studying topics like application security, and mobile development. Developers Institute went out of business before I graduated, so I finished the remainder of my studies at Yoobee College. This brings us to today, I have now completed my studies and have a level 5 and 6 diploma in software development, and am eager to land my first position as a web developer. ",
+    
 };
 // Edit your skill and the percentage you know about it
 // To Add a skill, copy any one below and paste it after the last comma
