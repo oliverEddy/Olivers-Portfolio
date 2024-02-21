@@ -37,6 +37,7 @@ button:focus {
   padding: 1rem;
   margin-bottom: 9rem;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  font-weight: 660;
 }
 .Header p {
   margin-top: 125px;
@@ -44,6 +45,7 @@ button:focus {
  text-align: center;
   padding: 1rem;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  font-size: 2.1rem;
 }
 .particle {
   position: absolute!;
@@ -472,6 +474,7 @@ color: #fff;
 .Header p {
   margin-top: 40px;
   background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 550;
   
 }
 .link-style-button {
