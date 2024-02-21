@@ -139,27 +139,6 @@ const projects = [
 // Edit your Miscellaneous Activities, its name and the url.
 // You can omit freely anything if you dont have it
 // To Add a Activity, copy any one below and paste it after the last comma and increment the id's Miscellaneous number
-const section4Title = "Miscellaneous";
-const miscellaneous = [
-{
-    // Add image in './styles/images.css' in #misc1
-    id: "misc1",
-    name: "Miscellaneous 1",
-    url: "https://github.com/kaustubhai",
-  },
-  {
-    // Add image in './styles/images.css' in #misc2
-    id: "misc2",
-    name: "Miscellaneous 2",
-    url: "https://github.com/kaustubhai",
-  },
-  {
-    // Add image in './styles/images.css' in #misc3
-    id: "misc3",
-    name: "Miscellaneous 3",
-    url: "https://github.com/kaustubhai",
-  },
-];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
 // If you hacve the link already, paste it in the contactUrl below
@@ -187,11 +166,11 @@ export {
   about,
   skillsBar,
   projects,
-  miscellaneous,
+
   contact,
   social,
   section2title,
   section3Title,
-  section4Title,
+
   section5Title,
 };
