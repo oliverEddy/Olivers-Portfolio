@@ -166,7 +166,7 @@ const section5Title = "Reach out to me! ";
 const contact = {
   pitch: [
     "What ever it might be about, feel free to reach out!",
-    "Fill in the email form with your details and I will get back to you as soon as possible -  Oliver Eddy."
+    "Fill in the email form with your details and I will get back to you as soon as possible."
   ],
   copyright: "Kaustubh Mishra",
   contactUrl: "",
