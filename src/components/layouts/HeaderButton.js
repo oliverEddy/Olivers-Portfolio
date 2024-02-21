@@ -5,7 +5,10 @@ const HeaderButton = () => {
     return (
         <>
             <div className="mx-auto">
-                <a href="#about"><button className="see">Checkout Portfolio<i className="fas fa-hand-point-down"></i></button></a>
+            <button className="see">
+  <span className="text-icon-wrapper">Checkout Portfolio<i className="fas fa-hand-point-down"></i></span>
+</button>
+
             </div>
         </>
     )
