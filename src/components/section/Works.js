@@ -1,6 +1,7 @@
 import React from 'react'
 import Project from '../layouts/Project'
 import { projects, section3Title } from '../../profile'
+import './Works.css'
 
 const Works = () => {
     return (
