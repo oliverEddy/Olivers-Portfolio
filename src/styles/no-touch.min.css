@@ -297,7 +297,7 @@ textarea:focus {
   outline: 0;
   border: none;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .half form button:hover {
   background-color: var(--hover-color);
@@ -670,84 +670,235 @@ input:checked + .slider:before {
     width: 100%;
   }
 }
-@media (max-width: 800px) {
-  .lead {
-    font-weight: 300;
-  }
-  .Header h1 {
-    font-size: 4.5rem;
-  }
-  .Header p {
-    font-size: 1.7rem;
-  }
-  .line-1 {
-    font-size: 80%;
-  
-  }
-  .underline {
-    text-decoration-color: (0, 0, 0, 0.1);
-  }
-  .about-text {
-    width: 100%;
-    text-align: center;
-  }
-  .red-line::before {
-    bottom: 590px;
-  }
-  .effect2 {
-    width: 100%;
-  }
-  .skills {
-    padding: 10% 5%;
-  }
-  .third {
-    width: 100%;
-  }
-  .project-card {
-    width: 100% !important;
-  }
-  .image-project {
-    width: 100% !important;
-  }
-  .third {
-    padding: 5%;
-  }
-  .pp-head-line {
-    width: 70%;
-  }
+@media (max-width: 1200px) {
   .git-form {
-    width: 90%;
-    padding: 5px;
-    padding-bottom: 35px;
+      width: 82%; /* Make the form width responsive */
+   
   }
+  .git-head {
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    
+  }
+
   .git-head-div {
-    width: 75%;
+      font-size: 1.8rem; /* Scale down the font size */
+      padding-top: 4%; /* Adjust padding */
+      padding-bottom: 10px; /* Adjust padding */
+      
   }
-  .switch {
- 
-  }
+
   .half form input,
-  textarea {
-    margin: 5px 0;
-    padding: 10px;
-  }
-  .half p {
-    display: none;
-  }
-  .gtp {
-    left: 80%;
-    top: 87%;
-    height: 75px;
-  }
-  .Copy {
-    display: none;
-  }
+  .half form textarea,
   .half form button {
-    margin-left: auto;
-    margin-right: auto;
+      font-size: 0.9rem; /* Scale down the font size */
+      padding: 8px 10px; /* Adjust padding */
+  }
+
+  .lead {
+      font-size: 0.95rem; /* Scale down the font size */
+  }
+
+  .git-cont .fab,
+  .git-cont .fas {
+      font-size: 30px; /* Scale down the icon size */
+  }
+
+  /* Adjust the container, row, and columns for better spacing */
+  .git-cont {
+      margin-top: 1rem; /* Adjust top margin */
+  }
+
+  .col-12.col-sm-6.half {
+      padding: 0 15px; /* Adjust padding for better spacing */
+  }
+  .half form {
+    padding: 2.5rem 0rem;
+padding-top: 1rem;    
+}
+.half p {
+padding-top: 1.5rem;
+font-size: 1.2rem;
+}
+
+}
+@media (max-width: 1028px) {
+  .git-form {
+      width: 650px; /* Adjust form width for tablets */
+      margin: 2rem auto; /* Center form with vertical spacing */
+      padding: 2rem; /* Adjust padding */
+  }
+
+  .git-head-div {
+      font-size: 1.5rem; /* Reduce the font size for headings */
+      padding-bottom: 20px; /* Adjust bottom padding */
+  }
+
+  .half form input,
+  .half form textarea {
+      font-size: 0.9rem; /* Adjust font size for form elements */
+      padding: 12px; /* Increase padding for touch targets */
+  }
+
+  .half form button {
+      font-size: 0.9rem; /* Adjust button font size */
+      padding: 10px 20px; /* Adjust button padding */
+  }
+
+  .lead {
+      font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  .git-cont .fab,
+  .git-cont .fas {
+      font-size: 28px; /* Adjust social icons size */
+  }
+}*/
+
+
+  .git-head {
+    font-size: 2rem;
   }
   
+  @media (max-width: 800px) {
+    .lead {
+      font-weight: 300;
+    }
+    .Header h1 {
+      font-size: 4.5rem;
+    }
+    .Header p {
+      font-size: 1.7rem;
+    }
+    .line-1 {
+      font-size: 80%;
+    
+    }
+    .underline {
+      text-decoration-color: (0, 0, 0, 0.1);
+    }
+    .about-text {
+      width: 100%;
+      text-align: center;
+    }
+    .red-line::before {
+      bottom: 590px;
+    }
+    .effect2 {
+      width: 100%;
+    }
+    .skills {
+      padding: 10% 5%;
+    }
+    .third {
+      width: 100%;
+    }
+    .project-card {
+      width: 100% !important;
+    }
+    .image-project {
+      width: 100% !important;
+    }
+    .third {
+      padding: 5%;
+    }
+    .pp-head-line {
+      width: 70%;
+    }
+    .git-form {
+      width: 90%;
+      padding: 5px;
+      padding-bottom: 35px;
+    }
+    .git-head-div {
+      width: 75%;
+    }
+    .switch {
+   
+    }
+    .half form input,
+    textarea {
+      margin: 5px 0;
+      padding: 10px;
+    }
+    .half p {
+    
+    }
+    .gtp {
+      left: 80%;
+      top: 87%;
+      height: 75px;
+    }
+    .Copy {
+      display: none;
+    }
+    .half form button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }
+
+  @media (max-width: 770px) {
+    .git-form {
+        width: 600px; /* Slightly reduce width from 650px at 1028px breakpoint */
+        margin: 1.5rem auto; /* Adjust margin for tighter spaces */
+        padding: 1.5rem; /* Slightly reduce padding */
+    }
+
+    .git-head-div {
+        font-size: 1.4rem; /* Slightly reduce from 1.5rem at 1028px breakpoint */
+        padding-bottom: 15px; /* Adjust bottom padding */
+    }
+
+    .half form input,
+    .half form textarea {
+        font-size: 0.85rem; /* Slightly reduce from 0.9rem for tighter spaces */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .half form button {
+        font-size: 0.85rem; /* Keep font size consistent with input/textarea */
+        padding: 8px 18px; /* Slightly reduce padding */
+    }
+
+    .lead {
+        font-size: 0.85rem; /* Slightly reduce from 0.9rem at 1028px breakpoint */
+    }
+
+    .git-cont .fab,
+    .git-cont .fas {
+        font-size: 26px; /* Slightly reduce from 28px at 1028px breakpoint */
+    }
+
+    /* Adjust the spacing and layout for a tighter viewport */
+    .git-cont {
+        margin-top: 0.5rem; /* Slightly reduce top margin */
+    }
+
+    .col-12.col-sm-6.half {
+        padding: 0 10px; /* Slightly reduce padding for better spacing */
+    }
+
+    .half p {
+        padding-top: 1rem; /* Adjust padding */
+        font-size: 1.1rem; /* Slightly reduce font size */
+    }
+
+    /* Adjust the form padding for better spacing */
+    .half form {
+        padding: 2rem 0rem;
+        padding-top: 1rem;
+    }
 }
+@media (max-width: 640px) {
+  .git-form {
+      width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
 @media (max-width: 640px)  {
 .Header h1 {
   font-size: 3.5rem;  
@@ -771,8 +922,29 @@ input:checked + .slider:before {
   .see{
 
   }
-  
+  .git-form {
+    width: 90%;
+
+}}
+@media (max-width: 600px) {
+  .lead {
+    display: none;
+  }
+  .col-12 {
+    flex: 0 0 auto;
+    width: 95%;
 }
+.half form button{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+
+  display: block; /* Use block to take the width adjustments */
+  margin: 20px auto; /* Auto margins for horizontal centering */
+  width: auto; /* Adjust width as necessary, auto for content-based width */
+}
+
+}
+
 @media (max-width: 434px) {
   .Header h1 {
     font-size: 2.5rem;
