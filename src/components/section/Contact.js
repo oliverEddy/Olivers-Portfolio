@@ -23,9 +23,14 @@ const Contact = () => {
                     </form>
                 </div>
                 <div className="col-12 col-sm-6 half">
-                    <p className="lead">
-                        {contact.pitch}        
-                    </p>
+                <p className="lead">
+        {contact.pitch.map((line, index) => (
+            <React.Fragment key={index}>
+                {line}
+                {index < contact.pitch.length - 1 && <><br /><br /></>} {/* Two line breaks */}
+            </React.Fragment>
+        ))}        
+    </p>
                 <div className="d-flex justify-content-center align-items-center flex-column">
                 <div className="inline-block">
                     {social.linkedin && <a title="Visit Linkedin profile" rel="noopener noreferrer" target="_blank"  href={social.linkedin}><i className="fab fa-linkedin"></i></a>}

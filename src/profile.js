@@ -21,7 +21,8 @@ const background = {
 const section2title = "About Me";
 const about = {
   paragraph:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris nunc congue nisi vitae suscipit tellus mauris a diam. ",
+    "I am a Junior software developer, I began my developer journey in 2022 with Developers Institute. During my first year at the Developers Institute, I learned the fundamentals, like version control, effective communication, and how to build web apps using PERN and MERN stacks. In my second year, I moved onto studying topics like application security, and mobile development. Developers Institute went out of business before I graduated, so I finished the remainder of my studies at Yoobee College. This brings us to today, I have now completed my studies and have a level 5 and 6 diploma in software development, and am eager to land my first position as a web developer. ",
+    
 };
 // Edit your skill and the percentage you know about it
 // To Add a skill, copy any one below and paste it after the last comma
@@ -138,35 +139,15 @@ const projects = [
 // Edit your Miscellaneous Activities, its name and the url.
 // You can omit freely anything if you dont have it
 // To Add a Activity, copy any one below and paste it after the last comma and increment the id's Miscellaneous number
-const section4Title = "Miscellaneous";
-const miscellaneous = [
-{
-    // Add image in './styles/images.css' in #misc1
-    id: "misc1",
-    name: "Miscellaneous 1",
-    url: "https://github.com/kaustubhai",
-  },
-  {
-    // Add image in './styles/images.css' in #misc2
-    id: "misc2",
-    name: "Miscellaneous 2",
-    url: "https://github.com/kaustubhai",
-  },
-  {
-    // Add image in './styles/images.css' in #misc3
-    id: "misc3",
-    name: "Miscellaneous 3",
-    url: "https://github.com/kaustubhai",
-  },
-];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/
 // If you hacve the link already, paste it in the contactUrl below
-const section5Title = "Reach out ! ";
+const section5Title = "Reach out to me! ";
 const contact = {
-  pitch:
-    "What ever it might be about, feel free to reach out! Simply fill in the email form and hit send, ill be sure to get back to you!",
-    
+  pitch: [
+    "What ever it might be about, feel free to reach out!",
+    "Fill in the email form with your details and I will get back to you as soon as possible."
+  ],
   copyright: "Kaustubh Mishra",
   contactUrl: "",
 };
@@ -185,11 +166,11 @@ export {
   about,
   skillsBar,
   projects,
-  miscellaneous,
+
   contact,
   social,
   section2title,
   section3Title,
-  section4Title,
+
   section5Title,
 };

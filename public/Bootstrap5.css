@@ -406,7 +406,7 @@ progress {
   display: none !important;
 }
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .display-1 {
@@ -1017,9 +1017,7 @@ progress {
   .offset-md-0 {
     margin-left: 0;
   }
-  .offset-md-1 {
-    margin-left: 8.333333%;
-  }
+
   .offset-md-2 {
     margin-left: 16.666667%;
   }

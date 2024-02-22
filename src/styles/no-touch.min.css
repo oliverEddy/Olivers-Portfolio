@@ -37,6 +37,7 @@ button:focus {
   padding: 1rem;
   margin-bottom: 9rem;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  font-weight: 660;
 }
 .Header p {
   margin-top: 125px;
@@ -44,6 +45,7 @@ button:focus {
  text-align: center;
   padding: 1rem;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  font-size: 2.1rem;
 }
 .particle {
   position: absolute!;
@@ -56,6 +58,7 @@ button:focus {
 }
 .skills {
   padding: 3%;
+  margin-top: 4rem;
 }
 .progress-block {
   padding: 10px 0;
@@ -75,11 +78,14 @@ button:focus {
 }
 .effect2 {
   position: relative;
-  width: 70%;
+  width: 85%;
+  height: 85vh;
   background: #fff;
   padding: 5%;
-  margin: 10% auto;
-  border-bottom: solid 1px #777 !important;
+  margin: 5% auto;
+  
+  border-bottom: solid 0.5px #777 !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .effect2:after,
 .effect2:before {
@@ -114,13 +120,16 @@ button:focus {
   background-color: #fff;
   background-size: contain;
   background-repeat: no-repeat;
+  height: 35vh;
+  margin-left: 8.33%;
+
+
 }
 .Photo.inverse-dark {
   background-color: #000;
 }
 .about-text {
-  width: 80%;
-  padding: 2%;
+
 }
 .red-line {
   color: var(--primary-color);
@@ -236,8 +245,8 @@ button:focus {
   box-sizing: border-box;
   display: block;
   margin: 3rem 3rem 0 3rem;
-  background-color:  rgba(0, 0, 0, 0.45);
-  border-radius: 6rem;
+  background-color:  rgba(0, 0, 0, 0.55);
+  border-radius: 4.5rem;
   max-height: 80vh;
 }
 .git-head-div {
@@ -288,7 +297,7 @@ textarea:focus {
   outline: 0;
   border: none;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .half form button:hover {
   background-color: var(--hover-color);
@@ -362,24 +371,70 @@ color: #fff;
   z-index: 1002;
   cursor: crosshair;
 }
+/* Base styles for .see button */
 .see {
   background-color: var(--primary-color);
   color: #fff;
-  border: #000;
-  outline: #000;
+  border: none; /* Updated from 'border: #000;' to remove the border */
+  outline: none;
   position: absolute;
-  padding: 5px 15px;
-  padding-bottom: 7px;
+  padding: 1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
   border-radius: 3px;
-  top: 90%;
+  top: 85%;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-  position: absolute;
+position: absolute;
   text-align: center;
-  position: absolute;
+position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  --offset: 3px; /* Custom property for the animation effect */
+  overflow: hidden; /* Ensures the pseudo-elements don't overflow the button */
+  display: flex;
+  
+
 }
-.fa-eye {
+
+.see .text-icon-wrapper {
+  position: relative; /* Establishes stacking context */
+  z-index: 2; /* Higher than pseudo-elements */
+  color: #fff; /* Ensures text is white */
+  
+}
+.see, .see .text-icon-wrapper {
+  white-space: nowrap;
+}
+
+
+/* Adding conic gradient animation */
+.see::before {
+  content: '';
+  background: conic-gradient(transparent 270deg, white, transparent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 2s linear infinite;
+}
+
+/* Overlay effect */
+.see::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+/* Adjust the .fa-hand-point-down icon if it's inside the .see button */
+.see .fa-hand-point-down {
   color: #fff;
   font-size: 20px;
   padding-top: 7px;
@@ -387,12 +442,43 @@ color: #fff;
   padding-left: 15px;
   padding-right: 7px;
 }
+
 .see:active {
   outline: 0;
 }
+
 .see:hover {
   background-color: var(--hover-color);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+
+}
+/* Reverse the animation on hover */
+
+.see::before, .see::after {
+  z-index: 1; /* Lower than the text */
+}
+
+/* Wrap the button text and icon in a span with class="text-content" for this CSS to apply */
+.see .text-content {
+  position: relative;
+  z-index: 2; /* Ensures text is above the pseudo-elements */
+  color: #fff; /* Ensure text color is visible against the background */
+}
+
+/* Existing styles for .see remain unchanged */
+
+/* Update the z-index for the icon if it's outside .text-content */
+.see .fa-hand-point-down {
+  position: relative;
+  z-index: 2; /* Ensure the icon is also above the pseudo-elements */
+}
+/* Keyframes for the rotate animation */
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
 }
 
 
@@ -471,6 +557,7 @@ color: #fff;
 .Header p {
   margin-top: 40px;
   background-color: rgba(0, 0, 0, 0.1);
+  font-weight: 550;
   
 }
 .link-style-button {
@@ -583,90 +670,362 @@ input:checked + .slider:before {
     width: 100%;
   }
 }
-@media (max-width: 800px) {
-  .lead {
-    font-weight: 300;
+@media (max-width: 1200px) {
+  .git-form {
+      width: 82%; /* Make the form width responsive */
+   
   }
-  .Header h1 {
-    font-size: 2.5rem;
-  }
-  .line-1 {
-    font-size: 80%;
-    top: 5.5%;
-  }
-  .underline {
-    text-decoration-color: (0, 0, 0, 0.1);
-  }
-  .about-text {
-    width: 100%;
+  .git-head {
+    white-space: nowrap;
     text-align: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    
   }
-  .red-line::before {
-    bottom: 590px;
+
+  .git-head-div {
+      font-size: 1.8rem; /* Scale down the font size */
+      padding-top: 4%; /* Adjust padding */
+      padding-bottom: 10px; /* Adjust padding */
+      
   }
-  .effect2 {
-    width: 100%;
+
+  .half form input,
+  .half form textarea,
+  .half form button {
+      font-size: 0.9rem; /* Scale down the font size */
+      padding: 8px 10px; /* Adjust padding */
   }
-  .skills {
-    padding: 10% 5%;
+
+  .lead {
+      font-size: 0.95rem; /* Scale down the font size */
   }
-  .third {
-    width: 100%;
+
+  .git-cont .fab,
+  .git-cont .fas {
+      font-size: 30px; /* Scale down the icon size */
   }
-  .project-card {
-    width: 100% !important;
+
+  /* Adjust the container, row, and columns for better spacing */
+  .git-cont {
+      margin-top: 1rem; /* Adjust top margin */
   }
-  .image-project {
-    width: 100% !important;
+
+  .col-12.col-sm-6.half {
+      padding: 0 15px; /* Adjust padding for better spacing */
   }
-  .third {
-    padding: 5%;
+  .half form {
+    padding: 2.5rem 0rem;
+padding-top: 1rem;    
+}
+.half p {
+padding-top: 1.5rem;
+font-size: 1.2rem;
+}
+
+}
+@media (max-width: 1028px) {
+  .git-form {
+      width: 650px; /* Adjust form width for tablets */
+      margin: 2rem auto; /* Center form with vertical spacing */
+      padding: 2rem; /* Adjust padding */
   }
-  .pp-head-line {
-    width: 70%;
+
+  .git-head-div {
+      font-size: 1.5rem; /* Reduce the font size for headings */
+      padding-bottom: 20px; /* Adjust bottom padding */
+  }
+
+  .half form input,
+  .half form textarea {
+      font-size: 0.9rem; /* Adjust font size for form elements */
+      padding: 12px; /* Increase padding for touch targets */
+  }
+
+  .half form button {
+      font-size: 0.9rem; /* Adjust button font size */
+      padding: 10px 20px; /* Adjust button padding */
+  }
+
+  .lead {
+      font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  .git-cont .fab,
+  .git-cont .fas {
+      font-size: 28px; /* Adjust social icons size */
+  }
+}*/
+
+
+  .git-head {
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 800px) {
+    .lead {
+      font-weight: 300;
+    }
+    .Header h1 {
+      font-size: 4.5rem;
+    }
+    .Header p {
+      font-size: 1.7rem;
+    }
+    .line-1 {
+      font-size: 80%;
+    
+    }
+    .underline {
+      text-decoration-color: (0, 0, 0, 0.1);
+    }
+    .about-text {
+      width: 100%;
+      text-align: center;
+    }
+    .red-line::before {
+      bottom: 590px;
+    }
+    .effect2 {
+      width: 100%;
+    }
+    .skills {
+      padding: 10% 5%;
+    }
+    .third {
+      width: 100%;
+    }
+    .project-card {
+      width: 100% !important;
+    }
+    .image-project {
+      width: 100% !important;
+    }
+    .third {
+      padding: 5%;
+    }
+    .pp-head-line {
+      width: 70%;
+    }
+    .git-form {
+      width: 90%;
+      padding: 5px;
+      padding-bottom: 35px;
+    }
+    .git-head-div {
+      width: 75%;
+    }
+    .switch {
+   
+    }
+    .half form input,
+    textarea {
+      margin: 5px 0;
+      padding: 10px;
+    }
+    .half p {
+    
+    }
+    .gtp {
+      left: 80%;
+      top: 87%;
+      height: 75px;
+    }
+    .Copy {
+      display: none;
+    }
+    .half form button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }
+
+  @media (max-width: 770px) {
+    .git-form {
+        width: 600px; /* Slightly reduce width from 650px at 1028px breakpoint */
+        margin: 1.5rem auto; /* Adjust margin for tighter spaces */
+        padding: 1.5rem; /* Slightly reduce padding */
+    }
+
+    .git-head-div {
+        font-size: 1.4rem; /* Slightly reduce from 1.5rem at 1028px breakpoint */
+        padding-bottom: 15px; /* Adjust bottom padding */
+    }
+
+    .half form input,
+    .half form textarea {
+        font-size: 0.85rem; /* Slightly reduce from 0.9rem for tighter spaces */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .half form button {
+        font-size: 0.85rem; /* Keep font size consistent with input/textarea */
+        padding: 8px 18px; /* Slightly reduce padding */
+    }
+
+    .lead {
+        font-size: 0.85rem; /* Slightly reduce from 0.9rem at 1028px breakpoint */
+    }
+
+    .git-cont .fab,
+    .git-cont .fas {
+        font-size: 26px; /* Slightly reduce from 28px at 1028px breakpoint */
+    }
+
+    /* Adjust the spacing and layout for a tighter viewport */
+    .git-cont {
+        margin-top: 0.5rem; /* Slightly reduce top margin */
+    }
+
+    .col-12.col-sm-6.half {
+        padding: 0 10px; /* Slightly reduce padding for better spacing */
+    }
+
+    .half p {
+        padding-top: 1rem; /* Adjust padding */
+        font-size: 1.1rem; /* Slightly reduce font size */
+    }
+
+    /* Adjust the form padding for better spacing */
+    .half form {
+        padding: 2rem 0rem;
+        padding-top: 1rem;
+    }
+}
+@media (max-width: 640px) {
+  .git-form {
+      width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 640px)  {
+.Header h1 {
+  font-size: 3.5rem;  
+}
+.Header p {
+  font-size: 1.3rem;
+}
+.see{
+  font-size: 1.1rem;
+  padding: 0.8rem ;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}}
+@media (max-width: 500px ){
+  .Header h1 {
+    font-size: 3rem;
+  }
+  .Header p {
+    font-size: 1.15rem;
+   }
+  .see{
+
   }
   .git-form {
     width: 90%;
-    padding: 5px;
-    padding-bottom: 35px;
-  }
-  .git-head-div {
-    width: 75%;
-  }
-  .switch {
-    bottom: 48%;
-    left: 35%;
-  }
-  .half form input,
-  textarea {
-    margin: 5px 0;
-    padding: 10px;
-  }
-  .half p {
+
+}}
+@media (max-width: 600px) {
+  .lead {
     display: none;
   }
-  .gtp {
-    left: 80%;
-    top: 87%;
-    height: 75px;
+  .col-12 {
+    flex: 0 0 auto;
+    width: 95%;
+}
+.half form button{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+
+  display: block; /* Use block to take the width adjustments */
+  margin: 20px auto; /* Auto margins for horizontal centering */
+  width: auto; /* Adjust width as necessary, auto for content-based width */
+}
+
+}
+
+@media (max-width: 434px) {
+  .Header h1 {
+    font-size: 2.5rem;
   }
-  .Copy {
-    display: none;
+  .Header p {
+    font-size: 0.95rem;
   }
-  .see {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  .see{
+    font-size: 1rem;
+    padding: 0.8rem ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .see .fa-hand-point-down {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 365px) {
+  .Header h1{
+font-size: 2rem;
+  }
+  .Header p{
+    font-size: 0.76rem;
+   }
+  .see{
+    font-size: 0.85rem;
+    padding: 0.8rem ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .see .fa-hand-point-down {
+    font-size: 13px;
+  }
+}
+@media (max-width: 300px) {
+  .Header h1{
+    font-size: 1.5rem;
+  }
+  .Header p{
+    font-size: 0.58rem;
+  }
+  .see{
+    font-size: 0.75rem;
+  }
+
+  .see .fa-hand-point-down {
+    font-size: 11px;
+  }
+}
+
+
+
+/*@media (max-width: 525px) {
+  .Header h1 {
+    font-size: 3rem;
+  }
+  .Header p {
+    font-size: 1.1rem;
+  }
+  .see{
+    font-size: 1rem;
+    padding: 0.8rem ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .see .fa-hand-point-down {
+    font-size: 15px;
+  }
+}
+@media (max-width: 525px){
+  .Header h1 {
+    font-size: 2.5rem;
+  }
+  .Header p {
     font-size: 1rem;
   }
-  .fa-eye {
-    font-size: 20px;
+  .see{
+    font-size: 0.9rem;
   }
-  .half form button {
-    margin-left: auto;
-    margin-right: auto;
+  .see .fa-hand-point-down {
+    font-size: 13px;
   }
-  
-}
+}*/
