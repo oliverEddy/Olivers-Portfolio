@@ -1,7 +1,7 @@
 import React from 'react'
 import Skills from '../layouts/Skills'
 import { about, skillsBar, section2title } from '../../profile'
-
+import './About.css'
 const About = () => {
     return (
         <div id="about" className="effect2">

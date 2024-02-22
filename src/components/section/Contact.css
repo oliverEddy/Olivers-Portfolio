@@ -72,6 +72,54 @@
   .lead {
     font-weight: 400;
   }
+  .half {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .half form input,
+textarea {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #777;
+  background-color: #ffffff;
+}
+.half form textarea {
+  padding-bottom: 45px;
+}
+.half form input:focus,
+textarea:focus {
+  border-radius: 5px;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid var(--primary-color);
+}
+.half form button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 2rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  box-shadow: none;
+  outline: 0;
+  border: none;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.half form button:hover {
+  background-color: var(--hover-color);
+}
+.half form {
+  padding: 3rem 1rem;
+}
+.half p {
+  padding: 3rem 1rem 0 1rem;
+  text-align: center;
+  color: #fff;
+}
   @media (max-width: 1200px) {
     .git-form {
         width: 82%; /* Make the form width responsive */
@@ -93,6 +141,26 @@
         font-size: 0.95rem; /* Scale down the font size */
     }
   }  
+  @media (max-width: 1200px) {
+    .half form input,
+    .half form textarea,
+    .half form button {
+      font-size: 0.9rem; /* Scale down the font size */
+      padding: 8px 10px; /* Adjust padding */
+    }
+  
+    .col-12.col-sm-6.half {
+      padding: 0 15px; /* Adjust padding for better spacing */
+    }
+    .half form {
+      padding: 2.5rem 0rem;
+      padding-top: 1rem;
+    }
+    .half p {
+      padding-top: 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
 
     @media (max-width: 1028px) {
         .git-form {
@@ -115,6 +183,18 @@
             font-size: 0.9rem; /* Adjust paragraph font size */
         }
     }      
+    @media (max-width: 1028px) {
+      .half form input,
+      .half form textarea {
+        font-size: 0.9rem; /* Adjust font size for form elements */
+        padding: 12px; /* Increase padding for touch targets */
+      }
+    
+      .half form button {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 10px 20px; /* Adjust button padding */
+      }
+    }
 
     @media (max-width: 800px) {
         .git-form {
@@ -127,7 +207,18 @@
           }
           .lead {
             font-weight: 300;
-          }}
+          }
+        /*
+        .half form input,
+  textarea {
+    margin: 5px 0;
+    padding: 10px;
+  }
+  .half form button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+*/}
 
         @media (max-width: 770px) {
             .git-form {
@@ -163,3 +254,36 @@
                   width: 90%;
               
               }}
+              @media (max-width: 770px) {
+                .half form input,
+                .half form textarea {
+                  font-size: 0.85rem; /* Slightly reduce from 0.9rem for tighter spaces */
+                  padding: 10px; /* Adjust padding */
+                }
+              
+                .half form button {
+                  font-size: 0.85rem; /* Keep font size consistent with input/textarea */
+                  padding: 8px 18px; /* Slightly reduce padding */
+                }
+              
+                /* Adjust the spacing and layout for a tighter viewport */
+              
+                .col-12.col-sm-6.half {
+                  padding: 0 10px; /* Slightly reduce padding for better spacing */
+                }
+              
+                .half p {
+                  padding-top: 1rem; /* Adjust padding */
+                  font-size: 1.1rem; /* Slightly reduce font size */
+                }
+              
+                /* Adjust the form padding for better spacing */
+                .half form {
+                  padding: 2rem 0rem;
+                  padding-top: 1rem;
+                }
+              }
+              
+@media (max-width: 600px) {
+  
+}

@@ -11,6 +11,7 @@ import Bitday9 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitd
 import Bitday10 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--10.png";
 import Bitday11 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--11.png";
 import Bitday12 from "/Users/olivereddy/REAL-PORTFOLIO/Olivers-Portfolio/src/Bitday-IMG/Bitday--12.png";
+import "./Particles.css";
 
 const imageValueMap = {
   [Bitday1]: 0,

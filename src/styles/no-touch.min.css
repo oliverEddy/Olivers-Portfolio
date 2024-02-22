@@ -101,10 +101,7 @@ image-container
 .about-text {
 
 }
-.red-line {
-  color: var(--primary-color);
-  font-weight: 500;
-}
+
 .About-title-box {
   box-sizing: border-box;
   width: 50%;
@@ -138,13 +135,7 @@ image-container
 .skill__square svg:hover {
   color: #95a9de!important;
 }
-.third {
-  width: 75%;
-  margin: 10% auto;
-  align-items: center;
-  padding: 3%;
-  justify-content: center;
-}
+
 .project-card {
   padding: 15px;
   margin-top: 15px;
@@ -190,13 +181,7 @@ image-container
 .pp-head {
   text-align: center;
 }
-.pp-head-line {
-  box-sizing: border-box;
-  width: 30%;
-  padding-bottom: 5px;
-  
-  margin-bottom: 15px;
-}
+
 .pp-text {
   font-size: 1.5rem;
 }
@@ -450,30 +435,22 @@ font-size: 1.2rem;
       width: 100%;
       text-align: center;
     }
-    .red-line::before {
-      bottom: 590px;
-    }
+
     .effect2 {
       width: 100%;
     }
     .skills {
       padding: 10% 5%;
     }
-    .third {
-      width: 100%;
-    }
+
     .project-card {
       width: 100% !important;
     }
     .image-project {
       width: 100% !important;
     }
-    .third {
-      padding: 5%;
-    }
-    .pp-head-line {
-      width: 70%;
-    }
+
+  
 
     .half form input,
     textarea {
