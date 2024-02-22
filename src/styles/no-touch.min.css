@@ -394,6 +394,7 @@ position: absolute;
   --offset: 3px; /* Custom property for the animation effect */
   overflow: hidden; /* Ensures the pseudo-elements don't overflow the button */
   display: flex;
+  
 
 }
 
@@ -401,7 +402,12 @@ position: absolute;
   position: relative; /* Establishes stacking context */
   z-index: 2; /* Higher than pseudo-elements */
   color: #fff; /* Ensures text is white */
+  
 }
+.see, .see .text-icon-wrapper {
+  white-space: nowrap;
+}
+
 
 /* Adding conic gradient animation */
 .see::before {
@@ -669,11 +675,14 @@ input:checked + .slider:before {
     font-weight: 300;
   }
   .Header h1 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+  }
+  .Header p {
+    font-size: 1.7rem;
   }
   .line-1 {
     font-size: 80%;
-    top: 5.5%;
+  
   }
   .underline {
     text-decoration-color: (0, 0, 0, 0.1);
@@ -715,8 +724,7 @@ input:checked + .slider:before {
     width: 75%;
   }
   .switch {
-    bottom: 48%;
-    left: 35%;
+ 
   }
   .half form input,
   textarea {
@@ -734,20 +742,118 @@ input:checked + .slider:before {
   .Copy {
     display: none;
   }
-  .see {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 1rem;
-  }
-  .fa-eye {
-    font-size: 20px;
-  }
   .half form button {
     margin-left: auto;
     margin-right: auto;
   }
   
 }
+@media (max-width: 640px)  {
+.Header h1 {
+  font-size: 3.5rem;  
+}
+.Header p {
+  font-size: 1.3rem;
+}
+.see{
+  font-size: 1.1rem;
+  padding: 0.8rem ;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}}
+@media (max-width: 500px ){
+  .Header h1 {
+    font-size: 3rem;
+  }
+  .Header p {
+    font-size: 1.15rem;
+   }
+  .see{
+
+  }
+  
+}
+@media (max-width: 434px) {
+  .Header h1 {
+    font-size: 2.5rem;
+  }
+  .Header p {
+    font-size: 0.95rem;
+  }
+  .see{
+    font-size: 1rem;
+    padding: 0.8rem ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .see .fa-hand-point-down {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 365px) {
+  .Header h1{
+font-size: 2rem;
+  }
+  .Header p{
+    font-size: 0.76rem;
+   }
+  .see{
+    font-size: 0.85rem;
+    padding: 0.8rem ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .see .fa-hand-point-down {
+    font-size: 13px;
+  }
+}
+@media (max-width: 300px) {
+  .Header h1{
+    font-size: 1.5rem;
+  }
+  .Header p{
+    font-size: 0.58rem;
+  }
+  .see{
+    font-size: 0.75rem;
+  }
+
+  .see .fa-hand-point-down {
+    font-size: 11px;
+  }
+}
+
+
+
+/*@media (max-width: 525px) {
+  .Header h1 {
+    font-size: 3rem;
+  }
+  .Header p {
+    font-size: 1.1rem;
+  }
+  .see{
+    font-size: 1rem;
+    padding: 0.8rem ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .see .fa-hand-point-down {
+    font-size: 15px;
+  }
+}
+@media (max-width: 525px){
+  .Header h1 {
+    font-size: 2.5rem;
+  }
+  .Header p {
+    font-size: 1rem;
+  }
+  .see{
+    font-size: 0.9rem;
+  }
+  .see .fa-hand-point-down {
+    font-size: 13px;
+  }
+}*/
