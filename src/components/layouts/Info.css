@@ -1,0 +1,81 @@
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Allows absolute positioning relative to this container */
+}
+.info-container {
+  position: fixed; /* Stays in place during scroll */
+  top: 0; /* Aligns to the top of the viewport */
+  right: 0; /* Aligns to the right of the viewport */
+  margin: 20px; /* Adds some space from the top and right edges */
+  transform: translate(-140px, 20px);
+}
+
+.info-icon {
+  /* Retain color, size, etc., but ensure it's properly aligned within the container */
+  font-size: 28px; /* Example size */
+  color: white; /* Example color */
+  cursor: pointer;
+}
+.info-tooltip {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: calc(100% + 10px); /* Updated positioning to open downwards */
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #ffffff; /* Retained text color */
+  padding: 1rem;
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+
+  width: max-content;
+  width: 200px;
+  font-size: 1rem; /* Retained font size */
+  font-weight: 550;
+
+  z-index: 99;
+  text-align: center; /* Ensures text alignment */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.info-tooltip-font {
+  font-size: 1rem;
+}
+
+.link-style-button {
+  background-color: var(--primary-color); /* Retained background color */
+  color: #fff; /* Retained text color */
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  padding-bottom: 7px; /* Adjusted for visual alignment */
+  border-radius: 3px; /* Retained border radius */
+  font-size: 1rem; /* Retained font size */
+  font-weight: 550;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Retained box shadow */
+  cursor: pointer; /* Ensures it's clear the button is clickable */
+}
+.info-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust this value to position the triangle correctly */
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.1); /* Match the tooltip's background color */
+  }
+  
+
+.info-container:hover .info-tooltip {
+  display: block; /* Show on hover */
+}
+.info-spec {
+  margin-bottom: 0.25rem;
+}
+.link-style-button {
+  /* Retain button styles */
+}
