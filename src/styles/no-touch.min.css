@@ -6,233 +6,29 @@ body {
   padding: 0;
   background-color: #fff;
 }
-html.dark-mode {
-  background-color: #000;
-}
 button:focus {
   outline: 1px solid #777 !important;
 }
-image-container
-.bg-danger {
+image-container .bg-danger {
   background-color: var(--primary-color) !important;
 }
 
-.particle {
-  position: absolute!;
-  margin: 0 !important;
-  margin-top: -100vh !important;
-}
 .underline {
   text-decoration: underline;
   text-decoration-color: var(--primary-color);
 }
-.skills {
-  padding: 3%;
-  margin-top: 4rem;
-}
+
 .progress-block {
   padding: 10px 0;
 }
 .progress-block h2 {
   font-size: x-large;
 }
-.dark-mode {
-  filter: invert(1) hue-rotate(180deg);
-  -webkit-filter: invert(1) hue-rotate(180deg);
-  -moz-filter: invert(1) hue-rotate(180deg);
-}
-.inverse-dark {
-  filter: invert(1) hue-rotate(180deg);
-  -webkit-filter: invert(1) hue-rotate(180deg);
-  -moz-filter: invert(1) hue-rotate(180deg);
-}
-.effect2 {
-  position: relative;
-  width: 85%;
-  height: 85vh;
-  background: #fff;
-  padding: 5%;
-  margin: 5% auto;
-  
-  border-bottom: solid 0.5px #777 !important;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-.effect2:after,
-.effect2:before {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-.effect2:after {
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
-}
-.Photo {
-  background-color: #fff;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 35vh;
-  margin-left: 8.33%;
-
-
-}
-.Photo.inverse-dark {
-  background-color: #000;
-}
-.about-text {
-
-}
-
-.About-title-box {
-  box-sizing: border-box;
-  width: 50%;
-  padding-bottom: 5px;
-  border-bottom: solid 2px var(--primary-color);
-  margin-bottom: 15px;
-}
-.skill__square {
-  display: inline;
-  margin: 15px 0 !important;
-}
-.skill__square i {
-  font-size: 50px !important;
-  color: #777 !important;
-  height: 20px !important;
-}
-.skill__square svg {
-  width: 35px !important;
-  min-height: 20px !important;
-  padding: 0;
-  margin: 0;
-  color: #777 !important;
-}
-.skill__square h6 {
-  text-align: center;
-  margin: auto;
-  font-size: 1em;
-  padding-top: 5px;
-}
-.skill__square i:hover,
-.skill__square svg:hover {
-  color: #95a9de!important;
-}
-
-.project-card {
-  padding: 15px;
-  margin-top: 15px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
-  border: 0.5px solid #eee;
-}
-.project-card h2 {
-  color: var(--primary-color);
-  margin-top: 10px;
-  margin-left: 3%;
-  font-weight: 500;
-}
-.project-card h2:hover {
-  color: var(--hover-color);
-  text-decoration: none;
-}
-.project-card h3 {
-  text-align: left;
-  font-size: 1rem;
-  margin-left: 3%;
-}
-.image-project {
-  height: 300px;
-  width: auto;
-  margin-bottom: 20px;
-  overflow: hidden;
-  cursor: pointer !important;
-}
-.img-pro {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.image-project:hover .img-pro {
-  transform: scale(1.2);
-}
-.pp-head {
-  text-align: center;
-}
 
 .pp-text {
   font-size: 1.5rem;
 }
-.half {
-  display: inline-block;
-  vertical-align: top;
-}
-.half form input,
-textarea {
-  width: 100%;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  outline: 0;
-  box-shadow: none;
-  border: 1px solid #777;
-background-color: #ffffff;
-}
-.half form textarea {
-  padding-bottom: 45px;
-}
-.half form input:focus,
-textarea:focus {
-  border-radius: 5px;
-  outline: 0;
-  box-shadow: none;
-  border: 1px solid var(--primary-color);
-}
-.half form button {
-  padding: 10px 15px;
-  font-size: 1rem;
-  border-radius: 2rem;
-  color: #fff;
-  background-color: var(--primary-color);
-  box-shadow: none;
-  outline: 0;
-  border: none;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-.half form button:hover {
-  background-color: var(--hover-color);
-}
-.half form {
-  padding: 3rem 1rem;
-}
-.half p {
-  padding: 3rem 1rem 0 1rem;
-  text-align: center;
-color: #fff;
-}
+
 .inline-button {
   display: inline;
   vertical-align: middle;
@@ -261,9 +57,7 @@ color: #fff;
   font-weight: 500;
   padding-top: 2%;
 }
-.project-name {
-  text-decoration: none;
-}
+
 .gtp {
   position: fixed;
   left: 92%;
@@ -273,30 +67,24 @@ color: #fff;
   cursor: crosshair;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Animation for the tooltip */
 @-webkit-keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-
-
 
 .slider {
   position: absolute;
@@ -338,11 +126,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.anim-typewriter {
-  animation: typewriter 4s steps(27) 1s 1 normal both,
-    blinkTextCursor 0.5s steps(27) infinite normal;
-}
-
 @keyframes typewriter {
   from {
     width: 0;
@@ -367,190 +150,25 @@ input:checked + .slider:before {
   color: #fff;
   background: var(--primary-color);
 }
-@media (max-width: 1300px) {
-  .effect2 {
-    width: 100%;
+
+*/ @media (max-width: 800px) {
+  .underline {
+    text-decoration-color: (0, 0, 0, 0.1);
+  }
+
+  .gtp {
+    left: 80%;
+    top: 87%;
+    height: 75px;
+  }
+  .Copy {
+    display: none;
   }
 }
-@media (max-width: 1200px) {
 
-
-
-
-
-  .half form input,
-  .half form textarea,
-  .half form button {
-      font-size: 0.9rem; /* Scale down the font size */
-      padding: 8px 10px; /* Adjust padding */
-  }
-
-
-
-
-  .col-12.col-sm-6.half {
-      padding: 0 15px; /* Adjust padding for better spacing */
-  }
-  .half form {
-    padding: 2.5rem 0rem;
-padding-top: 1rem;    
-}
-.half p {
-padding-top: 1.5rem;
-font-size: 1.2rem;
-}
-
-}
-@media (max-width: 1028px) {
-
-
-
-
-  .half form input,
-  .half form textarea {
-      font-size: 0.9rem; /* Adjust font size for form elements */
-      padding: 12px; /* Increase padding for touch targets */
-  }
-
-  .half form button {
-      font-size: 0.9rem; /* Adjust button font size */
-      padding: 10px 20px; /* Adjust button padding */
-  }
-
-
-
-}*/
-
-
-
-  
-  @media (max-width: 800px) {
-  
-
-
-    .underline {
-      text-decoration-color: (0, 0, 0, 0.1);
-    }
-    .about-text {
-      width: 100%;
-      text-align: center;
-    }
-
-    .effect2 {
-      width: 100%;
-    }
-    .skills {
-      padding: 10% 5%;
-    }
-
-    .project-card {
-      width: 100% !important;
-    }
-    .image-project {
-      width: 100% !important;
-    }
-
-  
-
-    .half form input,
-    textarea {
-      margin: 5px 0;
-      padding: 10px;
-    }
-    .half p {
-    
-    }
-    .gtp {
-      left: 80%;
-      top: 87%;
-      height: 75px;
-    }
-    .Copy {
-      display: none;
-    }
-    .half form button {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-  }
-
-  @media (max-width: 770px) {
- 
- 
-
-    .half form input,
-    .half form textarea {
-        font-size: 0.85rem; /* Slightly reduce from 0.9rem for tighter spaces */
-        padding: 10px; /* Adjust padding */
-    }
-
-    .half form button {
-        font-size: 0.85rem; /* Keep font size consistent with input/textarea */
-        padding: 8px 18px; /* Slightly reduce padding */
-    }
-
-
-  
-    /* Adjust the spacing and layout for a tighter viewport */
- 
-    .col-12.col-sm-6.half {
-        padding: 0 10px; /* Slightly reduce padding for better spacing */
-    }
-
-    .half p {
-        padding-top: 1rem; /* Adjust padding */
-        font-size: 1.1rem; /* Slightly reduce font size */
-    }
-
-    /* Adjust the form padding for better spacing */
-    .half form {
-        padding: 2rem 0rem;
-        padding-top: 1rem;
-    }
-}
-@media (max-width: 640px) {
-
-}
-
-@media (max-width: 640px)  {
-
-}
-@media (max-width: 500px ){
-
-  .see{
-
-  }
-  }
 @media (max-width: 600px) {
-
   .col-12 {
     flex: 0 0 auto;
     width: 95%;
+  }
 }
-.half form button{
-  display: flex;
-  justify-content: center; /* Center horizontally */
-
-  display: block; /* Use block to take the width adjustments */
-  margin: 20px auto; /* Auto margins for horizontal centering */
-  width: auto; /* Adjust width as necessary, auto for content-based width */
-}
-
-}
-
-@media (max-width: 434px) {
-
-}
-
-@media (max-width: 365px) {
-
-
-}
-@media (max-width: 300px) {
-
-
-}
-
-
-

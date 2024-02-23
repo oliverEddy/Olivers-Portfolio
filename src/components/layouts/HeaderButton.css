@@ -24,9 +24,9 @@
   
   }
   .see .text-icon-wrapper {
-    position: relative; /* Establishes stacking context */
-    z-index: 2; /* Higher than pseudo-elements */
-    color: #fff; /* Ensures text is white */
+    position: relative; 
+    z-index: 2; 
+    color: #fff; 
     
   }
   .see, .see .text-icon-wrapper {
