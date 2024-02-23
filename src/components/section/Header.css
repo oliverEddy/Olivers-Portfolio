@@ -42,60 +42,7 @@
     transform: translateY(-50%);
     font-family: "Anonymous Pro", monospace !important;
   }
-  .switch {
-    position: relative; 
-    display: inline-block; 
-    text-align: center;
-    cursor: pointer;
-    color: white;
-    width: 60px;
-    height: 34px;
-    left: 44.5%;
-    bottom: 46%;
-  }
   
-  .switch i {
-    font-size: 28px; /* Icon size */
-    line-height: 0px; 
-    height: 40px;
-    display: inline-block;
-  }
-  
-  /* Initially hide the tooltip */
-  .switch p {
-    display: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    text-align: center;
-    width: 178px;
-    border-radius: 3px;
-    color: #FFFFFF;
-    font-size: 12px;
-    line-height: 18px;
-    z-index: 99;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -55px);
-  }
-  .switch p:before { 
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-bottom-color: rgba(0,0,0,0.1);
-    top: -10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .switch:hover p {
-    display: block;
-    -webkit-animation: fadeIn 0.3s ease-in-out;
-    animation: fadeIn 0.3s ease-in-out;
-  }
   .link-style-button {
     background-color: var(--primary-color);
     color: #fff;
@@ -140,9 +87,63 @@
   .HeaderButton {
     grid-row: 4 / 5;
     align-self: center; 
+    
   }
 
-
+  .switch {
+    position: relative; 
+    display: inline-block; 
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    width: 60px;
+    height: 34px;
+    left: 44.5%;
+    bottom: 90%;
+  }
+  
+  .switch i {
+    font-size: 28px; /* Icon size */
+    line-height: 0px; 
+    height: 40px;
+    display: inline-block;
+  }
+  
+  /* Initially hide the tooltip */
+  .switch p {
+    display: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    width: 178px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 18px;
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -55px);
+  }
+  .switch p:before { 
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.1);
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .switch:hover p {
+    display: block;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+  }
   
   @media (max-width: 800px) {
   

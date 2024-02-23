@@ -15,7 +15,9 @@ const Header = () => {
       <div className="Header-grid">
         <h1>{header.name}</h1>
         <p className="line-1">Welcome to my portfolio showcase!</p>
-        <HeaderButton />
+        <div className="HeaderButton">
+          <HeaderButton />
+        </div>
       </div>
       <div className="switch">
         {/* Use FontAwesome icon here */}
