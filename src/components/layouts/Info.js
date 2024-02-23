@@ -4,7 +4,6 @@ import './Info.css';
 const Info = () => {
   const handleClick = (e) => {
     e.preventDefault();
-    // Open Bitday page in a new tab
     window.open('https://bitday.me/', '_blank');
   };
 
