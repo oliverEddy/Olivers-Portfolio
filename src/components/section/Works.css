@@ -1,0 +1,37 @@
+.third {
+    width: 75%;
+    margin: 10% auto;
+    align-items: center;
+    padding: 3%;
+    justify-content: center;
+  }
+  .pp-head-line {
+    box-sizing: border-box;
+    width: 30%;
+    padding-bottom: 5px;
+    
+    margin-bottom: 15px;
+  }
+  .red-line {
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+  .pp-head {
+    text-align: center;
+  }
+  
+  @media (max-width: 800px) {
+    .third {
+      width: 100%;
+    }
+
+    .third {
+      padding: 5%;
+    }
+    .pp-head-line {
+        width: 70%;
+      }
+      .red-line::before {
+        bottom: 590px;
+      }
+  }

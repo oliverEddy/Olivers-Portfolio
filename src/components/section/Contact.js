@@ -1,5 +1,6 @@
 import React from 'react'
 import { contact, section5Title, social } from '../../profile'
+import './Contact.css'
 
 const Contact = () => {
     

@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderButton from "../layouts/HeaderButton";
 import { header } from "../../profile";
+import "./Header.css";
 
 const Header = () => {
   const handleClick = (e) => {
