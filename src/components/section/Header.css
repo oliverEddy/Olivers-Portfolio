@@ -11,28 +11,25 @@
   .Header h1 {
     text-align: center;
     font-size: 5.5rem;
-    position: absolute;
+
     color: #fff;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    margin-bottom: 9rem;
+  
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     font-weight: 660;
+    display: flex;
   }
   .Header p {
-    margin-top: 125px;
+      background-color: rgba(0, 0, 0, 0.1);
+    font-weight: 550;
     color: #fff;
    text-align: center;
     padding: 1rem;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     font-size: 2.1rem;
   }
-  .Header p {
-    margin-top: 40px; /*sort this shit out, it move the info cloud up, but also the welcome, seperate them plz*/
-    background-color: rgba(0, 0, 0, 0.1);
-    font-weight: 550;
-    
-  }
+
   .line-1 {
     position: relative;
     top: 10%;
@@ -119,6 +116,34 @@
   .link-style-button:active {
     outline: 0;
   }
+  .Header-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr; /* Defines four rows */
+    justify-items: center; /* Center items horizontally */
+    align-items: start; /* Align items to the start of their grid cell */
+    height: 100vh;
+  }
+  
+  /* Position the h1 element in the 3rd row from the bottom (2nd row from the top) */
+  .Header h1 {
+    grid-row: 2 / 3;
+    align-self: center; 
+  }
+  
+  /* Position the .line-1 element in the 2nd row from the bottom (3rd row from the top) */
+  .line-1 {
+    grid-row: 3 / 4;
+    align-self: center; 
+  }
+  
+  /* Ensure the HeaderButton (if it's a direct child of .Header-grid) is placed in the bottom row */
+  .HeaderButton {
+    grid-row: 4 / 5;
+    align-self: center; 
+  }
+
+
+  
   @media (max-width: 800px) {
   
     .Header h1 {

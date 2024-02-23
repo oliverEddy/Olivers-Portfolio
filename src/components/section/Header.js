@@ -11,21 +11,19 @@ const Header = () => {
   };
 
   return (
-    <div>
-      <div className="Header">
-        <h1>{`${header.name}`}</h1>
+    <div className="Header">
+      <div className="Header-grid">
+        <h1>{header.name}</h1>
         <p className="line-1">Welcome to my portfolio showcase!</p>
-
         <HeaderButton />
-
-        <div className="switch">
-          {/* Use FontAwesome icon here */}
-          <i className="fas fa-info-circle"></i>
-          <p>Check out the inspiration behind these alternating backgrounds!<br />
-            {/* Replace <a> with <button> */}
-            <button onClick={handleClick} className="link-style-button">BitDay Live</button>
-          </p>
-        </div>
+      </div>
+      <div className="switch">
+        {/* Use FontAwesome icon here */}
+        <i className="fas fa-info-circle"></i>
+        <p>Check out the inspiration behind these alternating backgrounds!<br />
+          {/* Replace <a> with <button> */}
+          <button onClick={handleClick} className="link-style-button">BitDay Live</button>
+        </p>
       </div>
     </div>
   );

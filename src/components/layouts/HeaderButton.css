@@ -26,7 +26,7 @@
   .see .text-icon-wrapper {
     position: relative; 
     z-index: 2; 
-    color: #fff; 
+    color: #fff; /* Ensures text is white */
     
   }
   .see, .see .text-icon-wrapper {
