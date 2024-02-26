@@ -24,3 +24,14 @@
   .skill__square svg:hover {
     color: #95a9de!important;
   }
+  .skill-item {
+    flex: 1 1 200px; /* Grow and shrink starting at 200px */
+    min-width: 150px; /* Minimum width to ensure content is readable */
+    max-width: 1fr; /* Maximum width to allow filling the container */
+    text-align: center; /* Center the text and/or images within the skill item */
+  }
+  .skill-item img {
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
