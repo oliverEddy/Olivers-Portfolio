@@ -54,8 +54,8 @@
     height: 85vh;
     background: #fff;
     padding: 5%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    padding-left: 0;
+    padding-right: 0%;
     margin: 5% auto;
     border-bottom: solid 0.5px #777 !important;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -175,6 +175,21 @@ margin: 20px;
   padding: 0; /* Adjust or remove padding as needed */
 }
 
+@media only screen and (max-width: 1700px) {
+  .Photo {
+    grid-column: 2 / 5; /* Takes up the first column */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+
+  }
+  
+  .about {
+    grid-column: 5 / 8; /* Spans middle and right columns */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .lead.about-text {
     color: red;
@@ -191,6 +206,7 @@ margin: 20px;
     grid-row: 1 / 2; /* Top row */
     /* Other styles remain unchanged */
   }
+
 }
 @media only screen and (max-width: 767px) {
   .lead.about-text {
