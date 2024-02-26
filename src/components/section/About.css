@@ -45,14 +45,7 @@
     border-bottom: solid 2px var(--primary-color);
     margin-bottom: 15px;
   }
-  .Photo {
-    background-color: #fff;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 35vh;
-    margin-left: 8.33%;
-  }
-  
+
   .skills {
     /*padding: 3%;
     margin-top: 4rem;*/
@@ -139,16 +132,25 @@
   .grid-item.about {
     display: flex; /* Or 'block' if your content is not flex-based */
     flex-direction: column; /* Useful for flex; adjust as needed */
-    justify-content: space-between; /* Adjusts child elements spacing; useful for flex */
+    justify-content:space-around; /* Adjusts child elements spacing; useful for flex */
     align-items: stretch; /* Stretches child items to fill the container; useful for flex */
     width: 100%; /* Ensures it fills its grid area */
     height: 100%; /* Ensures it fills its vertical space in the grid */
-    overflow: auto; /* Adds scroll for overflowing content, or 'hidden' to cut off */
+    overflow: hidden; /* Adds scroll for overflowing content, or 'hidden' to cut off */
     padding: 20px; /* Optional: Adjust padding to ensure content doesn't touch the borders */
     box-sizing: border-box; /* Ensures padding does not add to the width/height */
 }
-.grid-item.about p, .grid-item.about h1, .grid-item.about .lead {
-  font-size: calc(1vw + 1vh + .5vmin); /* Responsive base font size */
+.grid-item.Photo {
+  background-image: url('../../Images/1.png'); /* Adjust the path as needed */
+  background-size: contain; /* Use 'cover' to fill the entire space, 'contain' to ensure the image fits inside the container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex; /* Enables flexbox properties for centering content */
+  justify-content: center; /* Horizontally center content (if any) inside the div */
+  align-items: center; /* Vertically center content (if any) inside the div */
+  width: 100%; /* Ensure the div takes up the full width of its grid area */
+  height: 100%; /* Ensure the div takes up the full height of its grid area */
+  padding: 2rem;
 }
 
   /* Styles for mobile devices */
