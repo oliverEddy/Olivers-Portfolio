@@ -31,7 +31,6 @@
     text-align: center; /* Center the text and/or images within the skill item */
   }
   .skill-item img {
-    max-width: 100%; /* Ensure the image does not exceed its container's width */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
+  max-width: 100%; /* Ensure the image does not exceed its container's width */
+  height: auto; /* Maintain aspect ratio */
+}

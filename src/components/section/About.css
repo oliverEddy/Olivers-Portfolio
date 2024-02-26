@@ -175,31 +175,65 @@ margin: 20px;
   padding: 0; /* Adjust or remove padding as needed */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Styles for mobile devices */
-@media only screen and (max-width: 767px) {
-  /* CSS rules for mobile */
-}
-
-/* Styles for tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* CSS rules for tablets */
+  .lead.about-text {
+    color: red;
+  }
+  .Photo {
+    grid-column: 2 / 5; /* Takes up the first column */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+
+  }
+  
+  .about {
+    grid-column: 5 / 8; /* Spans middle and right columns */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+  }
+}
+@media only screen and (max-width: 767px) {
+  .lead.about-text {
+    color: green;
+  }
+  .Photo {
+    display: none;
+  }
+  .grid-item.Photo {
+    display: none;
+  
+  }
+  .about {
+    grid-column: 2 / 8; /* Spans middle and right columns */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+  }
 }
 
-/* Styles for desktops and larger screens */
-@media only screen and (min-width: 1025px) {
-  /* CSS rules for desktops */
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Styles for mobile devices 
+@media only screen and (max-width: 767px) {
+
 }
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+}
+*/
