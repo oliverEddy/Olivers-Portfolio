@@ -45,33 +45,211 @@
     border-bottom: solid 2px var(--primary-color);
     margin-bottom: 15px;
   }
-  .Photo {
-    background-color: #fff;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 35vh;
-    margin-left: 8.33%;
+
+
+
+  .effect2 {
+    position: relative;
+    width: 85%;
+    height: 85vh;
+    background: #fff;
+    padding: 5%;
+    padding-left: 0;
+    padding-right: 0%;
+    margin: 5% auto;
+    border-bottom: solid 0.5px #777 !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  .skills {
-    /*padding: 3%;
-    margin-top: 4rem;*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+    grid-gap: 20px; /* Adjust the gap as needed */
   }
-  @media (max-width: 1300px) {
-    .effect2 {
-      width: 100%;
-    }
+  
+  .Photo {
+    background-image: url('../../Images/1.png');
+    grid-column: 1 / span 5; 
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+margin: 20px;
+
+    border-radius: 50%; /* Assuming you want a circular shape */
   }
-  @media (max-width: 800px) {
-   
-/*   .skills {
-      padding: 10% 5%;
-}*/
-.about-text {
-  width: 100%;
-  text-align: center;
+  
+  .about {
+    grid-column: 6 / span 7; /* Adjust based on design preference */
+  }
+  
+  #Skills {
+    grid-column: 1 / -1; /* Span full width */
+    display: flex;
+    justify-content: center; /* Center-align the skills */
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  .effect2 {
+
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* 3 columns with the middle one larger */
+    grid-template-rows: 60% 40%; /* 2 rows that adjust to content size */
+    gap: 20px; /* Space between grid items */
+     width: 100%; /* Ensures grid container fills the width */
+  height: 100%; 
+  }
+  
+  .Photo {
+    grid-column: 2 / 4; /* Takes up the first column */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+
+  }
+  
+  .about {
+    grid-column: 4 / 8; /* Spans middle and right columns */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+  }
+  
+  #Skills {
+    grid-column: 1 / -1; /* Stretches across all columns */
+    grid-row: 2 / 3; /* Second row */
+    display: flex;
+    flex-wrap: wrap; /* Allows skills to wrap within the container */
+    justify-content: center; /* Keeps items centered */
+    gap: 10px; /* Adds space between skill items */
+    padding: 20px; /* Adds padding within the skills container */
+    overflow: hidden; /* Ensures content doesn't spill out */
+  }
+  .grid-item.about {
+    display: flex; /* Or 'block' if your content is not flex-based */
+    flex-direction: column; /* Useful for flex; adjust as needed */
+    justify-content:space-around; /* Adjusts child elements spacing; useful for flex */
+    align-items: stretch; /* Stretches child items to fill the container; useful for flex */
+    width: 100%; /* Ensures it fills its grid area */
+    height: 100%; /* Ensures it fills its vertical space in the grid */
+    overflow: hidden; /* Adds scroll for overflowing content, or 'hidden' to cut off */
+    padding: 20px; /* Optional: Adjust padding to ensure content doesn't touch the borders */
+    box-sizing: border-box; /* Ensures padding does not add to the width/height */
 }
-/*  .effect2 {
-    width: 100%;
-  }*/
-    }
+.grid-item.Photo {
+
+  background-size: contain; /* Use 'cover' to fill the entire space, 'contain' to ensure the image fits inside the container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex; /* Enables flexbox properties for centering content */
+  justify-content: center; /* Horizontally center content (if any) inside the div */
+  align-items: center; /* Vertically center content (if any) inside the div */
+  overflow: hidden;
+
+
+}
+#Skills {
+  display: flex;
+  flex-wrap: wrap; /* Allow skill items to wrap onto the next line */
+  justify-content: center; /* Center-align skill items */
+  gap: 20px; /* Space between individual skill items */
+  padding: 20px; /* Padding around the entire skills container */
+}
+ 
+
+.lead.about-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lead.about-text, .About-title-box {
+  margin: 0; /* Adjust or remove margins as needed */
+  padding: 0; /* Adjust or remove padding as needed */
+}
+
+@media only screen and (max-width: 1700px) {
+  .Photo {
+    grid-column: 2 / 5; /* Takes up the first column */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+
+  }
+  
+  .about {
+    grid-column: 5 / 8; /* Spans middle and right columns */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .lead.about-text {
+    color: red;
+  }
+  .Photo {
+    grid-column: 2 / 5; /* Takes up the first column */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+
+  }
+  
+  .about {
+    grid-column: 5 / 8; /* Spans middle and right columns */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+  }
+
+}
+@media only screen and (max-width: 767px) {
+  .lead.about-text {
+    color: green;
+  }
+  .Photo {
+    display: none;
+  }
+  .grid-item.Photo {
+    display: none;
+  
+  }
+  .about {
+    grid-column: 2 / 8; /* Spans middle and right columns */
+    grid-row: 1 / 2; /* Top row */
+    /* Other styles remain unchanged */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Styles for mobile devices 
+@media only screen and (max-width: 767px) {
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+}
+*/
