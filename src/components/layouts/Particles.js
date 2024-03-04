@@ -74,8 +74,7 @@ const ParticlesBackground = () => {
           overscrollBehavior: "none"
         }}
       ></div>
-    <button onClick={previousImage} style={{ position: "absolute", left: "20px", top: "50%", zIndex: 1000 }}>Left</button>
-<button onClick={nextImage} style={{ position: "absolute", right: "20px", top: "50%", zIndex: 1000 }}>Right</button>
+
 
 </div>
 
