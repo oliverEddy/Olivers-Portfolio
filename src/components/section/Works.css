@@ -1,9 +1,11 @@
 .third {
-    width: 75%;
-    margin: 10% auto;
+    width: 85%;
+    height: 100vh;
+    margin: 2.5% auto;
+    margin-top: 5%;
     align-items: center;
-    padding: 3%;
     justify-content: center;
+
   }
   .pp-head-line {
     box-sizing: border-box;
@@ -19,7 +21,7 @@
   .pp-head {
     text-align: center;
   }
-  
+  /*
   @media (max-width: 800px) {
     .third {
       width: 100%;
@@ -34,4 +36,4 @@
       .red-line::before {
         bottom: 590px;
       }
-  }
+  }*/
