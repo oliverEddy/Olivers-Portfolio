@@ -33,13 +33,6 @@ const imageUrls = Object.keys(imageValueMap);
 const ParticlesBackground = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-  };
-  
-  const previousImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + imageUrls.length) % imageUrls.length);
-  };
 
   useEffect(() => {
     // Update background image based on current time
@@ -74,8 +67,7 @@ const ParticlesBackground = () => {
           overscrollBehavior: "none"
         }}
       ></div>
-    <button onClick={previousImage} style={{ position: "absolute", left: "20px", top: "50%", zIndex: 1000 }}>Left</button>
-<button onClick={nextImage} style={{ position: "absolute", right: "20px", top: "50%", zIndex: 1000 }}>Right</button>
+
 
 </div>
 

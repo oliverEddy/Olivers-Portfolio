@@ -82,7 +82,7 @@
   /* Ensure the HeaderButton (if it's a direct child of .Header-grid) is placed in the bottom row */
   .HeaderButton {
     grid-row: 4 / 5;
-    align-self: center; 
+    margin: 5%;
     
   }
 

@@ -55,7 +55,7 @@
   border-radius: 3px; /* Retained border radius */
   font-size: 1rem; /* Retained font size */
   font-weight: 550;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Retained box shadow */
+
   cursor: pointer; /* Ensures it's clear the button is clickable */
 }
 .info-tooltip::before {
@@ -78,4 +78,10 @@
 }
 .link-style-button {
   /* Retain button styles */
+}
+@media (max-width: 1220px) {
+.info-container {
+  display: none;
+}
+  
 }
