@@ -33,13 +33,6 @@ const imageUrls = Object.keys(imageValueMap);
 const ParticlesBackground = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-  };
-  
-  const previousImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + imageUrls.length) % imageUrls.length);
-  };
 
   useEffect(() => {
     // Update background image based on current time

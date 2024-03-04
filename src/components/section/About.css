@@ -68,7 +68,7 @@
   }
   
   .Photo {
-    background-image: url('../../Images/1.png');
+    background-image: url('../../Images/pfp.png');
     grid-column: 1 / span 5; 
     background-color: #fff;
     background-size: cover;
