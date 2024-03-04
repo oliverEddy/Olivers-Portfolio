@@ -184,8 +184,6 @@ textarea:focus {
           .lead {
             font-size: 0.9rem; /* Adjust paragraph font size */
         }
-    }      
-    @media (max-width: 1028px) {
       .half form input,
       .half form textarea {
         font-size: 0.9rem; /* Adjust font size for form elements */
@@ -198,70 +196,39 @@ textarea:focus {
       }
     }
 
+@media (max-width: 770px) {
+  .git-form {
+    width: 580px; /* Adjust form width for tablets */
+  
+ 
+}
+}
+
+        
 
 
-        @media (max-width: 770px) {
-            .git-form {
-                width: 600px; /* Slightly reduce width from 650px at 1028px breakpoint */
-                margin: 1.5rem auto; /* Adjust margin for tighter spaces */
-                padding: 1.5rem; /* Slightly reduce padding */
-            }
-            .git-head-div {
-                font-size: 1.4rem; /* Slightly reduce from 1.5rem at 1028px breakpoint */
-                padding-bottom: 15px; /* Adjust bottom padding */
-            }
-            .git-cont .fab,
-            .git-cont .fas {
-                font-size: 26px; /* Slightly reduce from 28px at 1028px breakpoint */
-            }
-            .git-cont {
-                margin-top: 0.5rem; /* Slightly reduce top margin */
-            }
-            .lead {
-                font-size: 0.85rem; /* Slightly reduce from 0.9rem at 1028px breakpoint */
-            }}
-            @media (max-width: 640px) {
-                .git-form {
-                    width: 90%; /* Adjust width for smaller screens */
-                }
-              }
+
+
+
+
               @media (max-width: 600px) {
                 .lead {
                   display: none;
-                }}
-              @media (max-width: 500px ){
+                }
                 .git-form {
                   width: 90%;
-              
-              }}
-              @media (max-width: 770px) {
-                .half form input,
-                .half form textarea {
-                  font-size: 0.85rem; /* Slightly reduce from 0.9rem for tighter spaces */
-                  padding: 10px; /* Adjust padding */
-                }
-              
-                .half form button {
-                  font-size: 0.85rem; /* Keep font size consistent with input/textarea */
-                  padding: 8px 18px; /* Slightly reduce padding */
-                }
-              
-                /* Adjust the spacing and layout for a tighter viewport */
-              
-                .col-12.col-sm-6.half {
-                  padding: 0 10px; /* Slightly reduce padding for better spacing */
-                }
-              
-                .half p {
-                  padding-top: 1rem; /* Adjust padding */
-                  font-size: 1.1rem; /* Slightly reduce font size */
-                }
-              
-                /* Adjust the form padding for better spacing */
-                .half form {
-                  padding: 2rem 0rem;
-                  padding-top: 1rem;
-                }
+              .git-head-div {
+                padding-bottom: 0;
               }
+              }
+        
+              .half form button {
+                display: flex;
+                align-self: center; /* Additional centering to ensure the button aligns perfectly in the center */
+             
+                margin: 0 auto; /* Alternative method for horizontal centering if flexbox is not preferred */
+                margin-top: 20px;
+              }}
+             
               
 
