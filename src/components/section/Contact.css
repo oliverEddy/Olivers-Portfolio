@@ -128,12 +128,11 @@ textarea:focus {
 
   @media (max-width: 1200px) {
     .git-form {
-        width: 82%; /* Make the form width responsive */
+      width: 1000px;
     }
     .git-head-div {
         font-size: 1.8rem; /* Scale down the font size */
-        padding-top: 4%; /* Adjust padding */
-        padding-bottom: 10px; /* Adjust padding */
+       
         
     }
     .git-head {
@@ -152,19 +151,16 @@ textarea:focus {
     .half form textarea,
     .half form button {
       font-size: 0.9rem; /* Scale down the font size */
-      padding: 8px 10px; /* Adjust padding */
+     
     }
   
     .col-12.col-sm-6.half {
       padding: 0 15px; /* Adjust padding for better spacing */
     }
-    .half form {
-      padding: 2.5rem 0rem;
-      padding-top: 1rem;
-    }
+
     .half p {
-      padding-top: 1.5rem;
-      font-size: 1.2rem;
+     
+      font-size: 1.4rem;
     }
   }
 
