@@ -167,8 +167,8 @@ textarea:focus {
     @media (max-width: 1028px) {
         .git-form {
             width: 650px; /* Adjust form width for tablets */
-            margin: 2rem auto; /* Center form with vertical spacing */
-            padding: 2rem; /* Adjust padding */
+          
+         
         }
         .git-head-div {
             font-size: 1.5rem; /* Reduce the font size for headings */
@@ -198,29 +198,7 @@ textarea:focus {
       }
     }
 
-    @media (max-width: 800px) {
-        .git-form {
-          width: 90%;
-          padding: 5px;
-          padding-bottom: 35px;
-        }
-        .git-head-div {
-            width: 75%;
-          }
-          .lead {
-            font-weight: 300;
-          }
-        /*
-        .half form input,
-  textarea {
-    margin: 5px 0;
-    padding: 10px;
-  }
-  .half form button {
-    margin-left: auto;
-    margin-right: auto;
-  }
-*/}
+
 
         @media (max-width: 770px) {
             .git-form {
@@ -286,6 +264,4 @@ textarea:focus {
                 }
               }
               
-@media (max-width: 600px) {
-  
-}
+
