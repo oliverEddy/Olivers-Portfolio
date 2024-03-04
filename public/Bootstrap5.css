@@ -5873,7 +5873,6 @@ button.close {
   flex-direction: row !important;
 }
 .flex-column {
-  flex-direction: column !important;
 }
 .flex-row-reverse {
   flex-direction: row-reverse !important;

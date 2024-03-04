@@ -40,7 +40,7 @@
   }
   .git-cont .fab {
 
-    padding: 20px;
+   
     font-size: 35px;
     height: 30px;
     text-align: center;
@@ -48,7 +48,8 @@
     color: var(--primary-color);
     transition: 0.5;
   }
-  .git-cont .fab:hover {
+  .git-cont .fab:hover,
+  .git-cont .fas:hover {
     color: var(--hover-color);
   }
   .git-cont .fas {
@@ -64,6 +65,7 @@
   .git-cont .fab,
   .git-cont .fas {
       font-size: 30px; /* Scale down the icon size */
+      margin: 25px;
   }
 
   /* Adjust the container, row, and columns for better spacing */
@@ -124,16 +126,40 @@ textarea:focus {
 }
 .half form {
 
+}/* Add or update in Contact.css */
+.d-flex {
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Align icons vertically */
 }
+
+/* This class is for the container of the social and download icons */
+.inline-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust the space between icons as needed */
+}
+
+/* Adjustments for individual icons, if needed */
+.inline-block a i {
+  font-size: 24px; /* Ensure uniform font size */
+  vertical-align: middle; /* Helps with vertical alignment */
+}
+
+/* Specific adjustments for the download icon, if necessary */
+.inline-block a .fas.fa-download {
+  /* Example: Adjust margin or padding if the icon still doesn't align perfectly */
+}
+
 
   @media (max-width: 1200px) {
     .git-form {
-        width: 82%; /* Make the form width responsive */
+      width: 1000px;
     }
     .git-head-div {
         font-size: 1.8rem; /* Scale down the font size */
-        padding-top: 4%; /* Adjust padding */
-        padding-bottom: 10px; /* Adjust padding */
+       
         
     }
     .git-head {
@@ -152,27 +178,26 @@ textarea:focus {
     .half form textarea,
     .half form button {
       font-size: 0.9rem; /* Scale down the font size */
-      padding: 8px 10px; /* Adjust padding */
+     
     }
   
     .col-12.col-sm-6.half {
       padding: 0 15px; /* Adjust padding for better spacing */
     }
-    .half form {
-      padding: 2.5rem 0rem;
-      padding-top: 1rem;
-    }
+
     .half p {
-      padding-top: 1.5rem;
-      font-size: 1.2rem;
+     
+      font-size: 1.4rem;
     }
   }
 
     @media (max-width: 1028px) {
         .git-form {
             width: 650px; /* Adjust form width for tablets */
-            margin: 2rem auto; /* Center form with vertical spacing */
-            padding: 2rem; /* Adjust padding */
+            padding-left: 1rem;
+            padding-right: 1rem;
+          
+         
         }
         .git-head-div {
             font-size: 1.5rem; /* Reduce the font size for headings */
@@ -188,8 +213,6 @@ textarea:focus {
           .lead {
             font-size: 0.9rem; /* Adjust paragraph font size */
         }
-    }      
-    @media (max-width: 1028px) {
       .half form input,
       .half form textarea {
         font-size: 0.9rem; /* Adjust font size for form elements */
@@ -202,94 +225,58 @@ textarea:focus {
       }
     }
 
-    @media (max-width: 800px) {
-        .git-form {
-          width: 90%;
-          padding: 5px;
-          padding-bottom: 35px;
-        }
-        .git-head-div {
-            width: 75%;
-          }
-          .lead {
-            font-weight: 300;
-          }
-        /*
-        .half form input,
-  textarea {
-    margin: 5px 0;
-    padding: 10px;
-  }
-  .half form button {
-    margin-left: auto;
-    margin-right: auto;
-  }
-*/}
+@media (max-width: 766px) {
+  .git-form {
+    width: 580px; /* Adjust form width for tablets */
+    padding-left: 0.75rem;
+            padding-right: 0.75rem;
+          
+ 
+}
+}
 
-        @media (max-width: 770px) {
-            .git-form {
-                width: 600px; /* Slightly reduce width from 650px at 1028px breakpoint */
-                margin: 1.5rem auto; /* Adjust margin for tighter spaces */
-                padding: 1.5rem; /* Slightly reduce padding */
-            }
-            .git-head-div {
-                font-size: 1.4rem; /* Slightly reduce from 1.5rem at 1028px breakpoint */
-                padding-bottom: 15px; /* Adjust bottom padding */
-            }
-            .git-cont .fab,
-            .git-cont .fas {
-                font-size: 26px; /* Slightly reduce from 28px at 1028px breakpoint */
-            }
-            .git-cont {
-                margin-top: 0.5rem; /* Slightly reduce top margin */
-            }
-            .lead {
-                font-size: 0.85rem; /* Slightly reduce from 0.9rem at 1028px breakpoint */
-            }}
-            @media (max-width: 640px) {
-                .git-form {
-                    width: 90%; /* Adjust width for smaller screens */
-                }
-              }
+        
+
+
+
+
+
+
               @media (max-width: 600px) {
                 .lead {
                   display: none;
-                }}
-              @media (max-width: 500px ){
+                }
                 .git-form {
                   width: 90%;
-              
-              }}
-              @media (max-width: 770px) {
-                .half form input,
-                .half form textarea {
-                  font-size: 0.85rem; /* Slightly reduce from 0.9rem for tighter spaces */
-                  padding: 10px; /* Adjust padding */
                 }
-              
-                .half form button {
-                  font-size: 0.85rem; /* Keep font size consistent with input/textarea */
-                  padding: 8px 18px; /* Slightly reduce padding */
-                }
-              
-                /* Adjust the spacing and layout for a tighter viewport */
-              
-                .col-12.col-sm-6.half {
-                  padding: 0 10px; /* Slightly reduce padding for better spacing */
-                }
-              
-                .half p {
-                  padding-top: 1rem; /* Adjust padding */
-                  font-size: 1.1rem; /* Slightly reduce font size */
-                }
-              
-                /* Adjust the form padding for better spacing */
-                .half form {
-                  padding: 2rem 0rem;
-                  padding-top: 1rem;
-                }
+              .git-head-div {
+                padding-bottom: 0;
               }
+              .git-form {
+                padding-bottom: 0rem;
+            
+              }
+        
+              .half form button {
+                display: flex;
+                align-self: center; /* Additional centering to ensure the button aligns perfectly in the center */
+             
+                margin: 0 auto; /* Alternative method for horizontal centering if flexbox is not preferred */
+                margin-top: 20px;
+              }
+              .inline-block {
+                margin-top: 15px;
+              }
+            }
+           
+           
+           
+           
+           
+              @media (max-width: 360px) {
+              .git-form {
+                max-width: 90%;
+              }
+             }
               
-@media (max-width: 600px) {
-  
-}
+
