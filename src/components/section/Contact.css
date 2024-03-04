@@ -40,7 +40,7 @@
   }
   .git-cont .fab {
 
-    padding: 20px;
+   
     font-size: 35px;
     height: 30px;
     text-align: center;
@@ -64,6 +64,7 @@
   .git-cont .fab,
   .git-cont .fas {
       font-size: 30px; /* Scale down the icon size */
+      margin: 25px;
   }
 
   /* Adjust the container, row, and columns for better spacing */
@@ -124,7 +125,32 @@ textarea:focus {
 }
 .half form {
 
+}/* Add or update in Contact.css */
+.d-flex {
+  display: flex;
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Align icons vertically */
 }
+
+/* This class is for the container of the social and download icons */
+.inline-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Adjust the space between icons as needed */
+}
+
+/* Adjustments for individual icons, if needed */
+.inline-block a i {
+  font-size: 24px; /* Ensure uniform font size */
+  vertical-align: middle; /* Helps with vertical alignment */
+}
+
+/* Specific adjustments for the download icon, if necessary */
+.inline-block a .fas.fa-download {
+  /* Example: Adjust margin or padding if the icon still doesn't align perfectly */
+}
+
 
   @media (max-width: 1200px) {
     .git-form {
