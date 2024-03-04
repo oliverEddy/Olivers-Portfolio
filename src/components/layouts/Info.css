@@ -79,3 +79,9 @@
 .link-style-button {
   /* Retain button styles */
 }
+@media (max-width: 1220px) {
+.info-container {
+  display: none;
+}
+  
+}

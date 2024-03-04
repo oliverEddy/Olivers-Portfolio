@@ -1,6 +1,6 @@
 .third {
     width: 85%;
-    height: 100vh;
+    min-height: 100vh;
     margin: 2.5% auto;
     margin-top: 5%;
     align-items: center;
