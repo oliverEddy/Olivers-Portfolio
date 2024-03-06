@@ -21,20 +21,20 @@ const background = {
 const section2title = "About Me";
 const about = {
   paragraph:
-    "I am a Junior software developer, I began my developer journey in 2022 with Developers Institute. During my first year at the Developers Institute, I learned the fundamentals, like version control, effective communication, and how to build web apps using PERN and MERN stacks. In my second year, I moved onto studying topics like application security, and mobile development. Developers Institute went out of business before I graduated, so I finished the remainder of my studies at Yoobee College. This brings us to today, I have now completed my studies and have a level 5 and 6 diploma in software development, and am eager to land my first position as a web developer. ",
+   "I have always been fascinated by technology and its inner workings. My fascination began with hardware, when I was 14 I disassembled and reassembled an old HP tower numerous times in preparation to build my gaming PC.This passion for construction and technology naturally evolved into an interest in software development. In 2022, I embarked on my software development education at the Developers Institute. There, I learned the fundamentals, including version control, effective communication, and the development of web applications using the PERN and MERN stacks. Following the closure of the Developers Institute, I continued with my second year of studies at Yoobee College, where I delved into application security, mobile and cross-platform development, and networking.I am now looking to take the next step in my development career. Having earned diplomas at levels 5 and 6 in software development, I am keen to join the workforce.  I thrive in team environments and have a deep interest in front‑end development and web design"
     
 };
 // Edit your skill and the percentage you know about it
 // To Add a skill, copy any one below and paste it after the last comma
 const skillsBar = [
   {
-    name: "HTML5",
+    name: "HTML",
     // To add a custom svg instead of font-awesome icons, add svg path below otherwise just comment it out
     svg: "M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z",
     faClass: "fab fa-html5",
   },
   {
-    name: "CSS3",
+    name: "CSS",
     // svg: '',
     faClass: "fab fa-css3",
   },
