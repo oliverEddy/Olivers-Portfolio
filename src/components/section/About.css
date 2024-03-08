@@ -1,6 +1,6 @@
 .effect2 {
   position: relative;
-  width: 85%;
+  width: 75%;
   height: 85vh;
   background: #fff;
   padding: 2%;
@@ -43,7 +43,7 @@
 }
 .About-title-box {
   box-sizing: border-box;
-  border-bottom: solid 2px var(--primary-color);
+
 
 }
 .red-line {
@@ -150,7 +150,12 @@
   padding: 0; /* Adjust or remove padding as needed */
 }
 
-
+.About-title-box {
+  margin-top: 20px;
+}
+.lead.about-text {
+  font-size: clamp(1rem, 2vw, 1.5rem); /* Adjust as needed for responsiveness */
+}
 
 
 
