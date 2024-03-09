@@ -39,3 +39,11 @@
   max-width: 100%; /* Ensure the image does not exceed its container's width */
   height: auto; /* Maintain aspect ratio */
 }
+@media (max-width: 1520px) {
+  .skill__square i,
+  .skill__square svg {
+    font-size: 42.5px !important; /* Smaller font size for icons */
+   
+  }
+}
+

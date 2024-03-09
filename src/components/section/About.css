@@ -100,7 +100,7 @@
   height: 100%; /* Ensures it fills its vertical space in the grid */
   overflow: hidden; /* Adds scroll for overflowing content, or 'hidden' to cut off */
   padding: 20px; /* Optional: Adjust padding to ensure content doesn't touch the borders */
-padding-right: 20px;
+padding-right: 15px;
   box-sizing: border-box; /* Ensures padding does not add to the width/height */
   padding-left: 40px;
 }
@@ -190,14 +190,24 @@ padding-right: 20px;
       grid-column: 6/11;
     }
     .lead.about-text {
-      font-size: 1.18rem;
+      font-size: 1.30rem;
     }
    .red-line {
     font-size: 40px;
-   }}
+   }
+   .grid-item.about {
+    padding-right: 0px;
+  
+  }}
 
   @media (max-width: 1520px) {
     .effect2 {
-      width: 1000px;
+      width: 1200px;
+    }
+    .red-line{
+      font-size: 30px;
+    }
+    .lead.about-text {
+      font-size: 1.17rem;
     }
   }  
