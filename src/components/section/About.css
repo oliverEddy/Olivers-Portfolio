@@ -211,3 +211,16 @@ padding-right: 15px;
       font-size: 1.17rem;
     }
   }  
+  @media (max-width: 1240px) {
+.effect2 {
+  width: 1000px;
+}
+.lead.about-text {
+  font-size: 1.03rem;
+}
+  }
+  @media (max-width: 1028px) {
+    .effect2{
+      width: 680px;
+    }
+      }

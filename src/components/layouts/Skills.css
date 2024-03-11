@@ -47,3 +47,11 @@
   }
 }
 
+@media (max-width: 1240px) {
+  .skill__square i,
+  .skill__square svg {
+    font-size: 34px !important; /* Smaller font size for icons */
+   
+  }
+}
+
