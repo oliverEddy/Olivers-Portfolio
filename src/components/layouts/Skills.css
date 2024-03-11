@@ -42,7 +42,7 @@
 @media (max-width: 1520px) {
   .skill__square i,
   .skill__square svg {
-    font-size: 42.5px !important; /* Smaller font size for icons */
+    font-size: 41.5px !important; /* Smaller font size for icons */
    
   }
 }

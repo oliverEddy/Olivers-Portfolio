@@ -210,17 +210,29 @@ padding-right: 15px;
     .lead.about-text {
       font-size: 1.17rem;
     }
+    
+    
   }  
   @media (max-width: 1240px) {
 .effect2 {
   width: 1000px;
 }
 .lead.about-text {
-  font-size: 1.03rem;
+  font-size: 1.075rem;
+} .grid-container {
+    
+  grid-template-rows: 72.5% 27.5%; /* 2 rows that adjust to content size */
+
 }
   }
   @media (max-width: 1028px) {
     .effect2{
       width: 680px;
     }
+    .grid-container {
+    
+      grid-template-rows: 75% 25%; /* 2 rows that adjust to content size */
+    
+    }
+    
       }
