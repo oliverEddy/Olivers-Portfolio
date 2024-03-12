@@ -1,5 +1,5 @@
 .third {
-    width: 85%;
+    width: 1840px;
     min-height: 100vh;
     margin: 2.5% auto;
     margin-top: 5%;
@@ -21,3 +21,18 @@
   .pp-head {
     text-align: center;
   }
+
+  @media (max-width: 2300px) {
+    .third {
+      width: 1530px;
+    }}
+
+    @media (max-width: 1900px) {
+      .third {
+        width: 1240px;
+      }}
+
+      @media (max-width: 1500px) {
+        .third {
+          width: 1040px;
+        }}
