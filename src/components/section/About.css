@@ -1,150 +1,115 @@
 .effect2 {
-    position: relative;
-    width: 85%;
-    height: 85vh;
-    background: #fff;
-    padding: 5%;
-    margin: 5% auto;
-    
-    border-bottom: solid 0.5px #777 !important;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  .effect2:after,
-  .effect2:before {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    top: 80%;
-    max-width: 300px;
-    background: #777;
-    -webkit-box-shadow: 0 15px 10px #777;
-    -moz-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
-    -webkit-transform: rotate(-3deg);
-    -moz-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-  }
-  .effect2:after {
-    -webkit-transform: rotate(3deg);
-    -moz-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    transform: rotate(3deg);
-    right: 10px;
-    left: auto;
-  }
-  .About-title-box {
-    box-sizing: border-box;
-    width: 50%;
-    padding-bottom: 5px;
-    border-bottom: solid 2px var(--primary-color);
-    margin-bottom: 15px;
-  }
+  position: relative;
+  width: 1920px;
+  height: 85vh;
+  background: #fff;
+  padding-top: 1.2%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 2.5%;
+  margin: 5% auto;
 
-
-
-  .effect2 {
-    position: relative;
-    width: 85%;
-    height: 85vh;
-    background: #fff;
-    padding: 5%;
-    padding-left: 0;
-    padding-right: 0%;
-    margin: 5% auto;
-    border-bottom: solid 0.5px #777 !important;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); /* 12-column grid */
-    grid-gap: 20px; /* Adjust the gap as needed */
-  }
-  
-  .Photo {
-    background-image: url('../../Images/pfp.png');
-    grid-column: 1 / span 5; 
-    background-color: #fff;
-    background-size: cover;
-    background-repeat: no-repeat;
-margin: 20px;
-
-    border-radius: 50%; /* Assuming you want a circular shape */
-  }
-  
-  .about {
-    grid-column: 6 / span 7; /* Adjust based on design preference */
-  }
-  
-  #Skills {
-    grid-column: 1 / -1; /* Span full width */
-    display: flex;
-    justify-content: center; /* Center-align the skills */
-  }
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  .effect2 {
-
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* 3 columns with the middle one larger */
-    grid-template-rows: 60% 40%; /* 2 rows that adjust to content size */
-    gap: 20px; /* Space between grid items */
-     width: 100%; /* Ensures grid container fills the width */
-  height: 100%; 
-  }
-  
-  .Photo {
-    grid-column: 2 / 4; /* Takes up the first column */
-    grid-row: 1 / 2; /* Top row */
-    /* Other styles remain unchanged */
-
-  }
-  
-  .about {
-    grid-column: 4 / 8; /* Spans middle and right columns */
-    grid-row: 1 / 2; /* Top row */
-    /* Other styles remain unchanged */
-  }
-  
-  #Skills {
-    grid-column: 1 / -1; /* Stretches across all columns */
-    grid-row: 2 / 3; /* Second row */
-    display: flex;
-    flex-wrap: wrap; /* Allows skills to wrap within the container */
-    justify-content: center; /* Keeps items centered */
-    gap: 10px; /* Adds space between skill items */
-    padding: 20px; /* Adds padding within the skills container */
-    overflow: hidden; /* Ensures content doesn't spill out */
-  }
-  .grid-item.about {
-    display: flex; /* Or 'block' if your content is not flex-based */
-    flex-direction: column; /* Useful for flex; adjust as needed */
-    justify-content:space-around; /* Adjusts child elements spacing; useful for flex */
-    align-items: stretch; /* Stretches child items to fill the container; useful for flex */
-    width: 100%; /* Ensures it fills its grid area */
-    height: 100%; /* Ensures it fills its vertical space in the grid */
-    overflow: hidden; /* Adds scroll for overflowing content, or 'hidden' to cut off */
-    padding: 20px; /* Optional: Adjust padding to ensure content doesn't touch the borders */
-    box-sizing: border-box; /* Ensures padding does not add to the width/height */
+  border-bottom: solid 0.5px #777 !important;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-.grid-item.Photo {
+.effect2:after,
+.effect2:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+.About-title-box {
+  box-sizing: border-box;
 
+
+}
+.red-line {
+  font-size: 45px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.Photo {
+  background-image: url("../../Images/pfp2.png");
+
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  margin-top: 0px;
+  margin-left:10px;
+
+
+  border-radius: 50%; /* Assuming you want a circular shape */
+}
+.Photo {
+  grid-column: 2 / 5; /* Takes up the first column */
+  grid-row: 1 / 2; /* Top row */
+  /* Other styles remain unchanged */
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* 3 columns with the middle one larger */
+  grid-template-rows: 70% 30%; /* 2 rows that adjust to content size */
+  gap: 20px; /* Space between grid items */
+  width: 100%; /* Ensures grid container fills the width */
+  height: 100%;
+}
+
+
+.about {
+  grid-column: 5 /10; /* Spans middle and right columns */
+  grid-row: 1 / 2; /* Top row */
+  /* Other styles remain unchanged */
+}
+
+
+.grid-item.about {
+  display: flex; /* Or 'block' if your content is not flex-based */
+  flex-direction: column; /* Useful for flex; adjust as needed */
+  justify-content: space-around; /* Adjusts child elements spacing; useful for flex */
+  align-items: stretch; /* Stretches child items to fill the container; useful for flex */
+  width: 100%; /* Ensures it fills its grid area */
+  height: 100%; /* Ensures it fills its vertical space in the grid */
+  overflow: hidden; /* Adds scroll for overflowing content, or 'hidden' to cut off */
+  padding: 20px; /* Optional: Adjust padding to ensure content doesn't touch the borders */
+padding-right: 15px;
+  box-sizing: border-box; /* Ensures padding does not add to the width/height */
+  padding-left: 40px;
+}
+
+
+
+
+
+.grid-item.Photo {
   background-size: contain; /* Use 'cover' to fill the entire space, 'contain' to ensure the image fits inside the container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -152,17 +117,31 @@ margin: 20px;
   justify-content: center; /* Horizontally center content (if any) inside the div */
   align-items: center; /* Vertically center content (if any) inside the div */
   overflow: hidden;
-
-
 }
+
+
+
+
+
+
+
+
 #Skills {
   display: flex;
   flex-wrap: wrap; /* Allow skill items to wrap onto the next line */
   justify-content: center; /* Center-align skill items */
-  gap: 20px; /* Space between individual skill items */
-  padding: 20px; /* Padding around the entire skills container */
+  column-gap: 20px; /* Space between individual skill items */
+  grid-column: 1 / -1; /* Stretches across all columns */
+  grid-row: 2 / 3; /* Second row */
+  overflow: hidden; /* Ensures content doesn't spill out */
 }
- 
+
+
+
+
+
+
+
 
 .lead.about-text {
   flex-grow: 1;
@@ -170,86 +149,90 @@ margin: 20px;
   flex-direction: column;
 }
 
-.lead.about-text, .About-title-box {
+.lead.about-text,
+.About-title-box {
   margin: 0; /* Adjust or remove margins as needed */
   padding: 0; /* Adjust or remove padding as needed */
 }
 
-@media only screen and (max-width: 1700px) {
-  .Photo {
-    grid-column: 2 / 5; /* Takes up the first column */
-    grid-row: 1 / 2; /* Top row */
-    /* Other styles remain unchanged */
+.About-title-box {
+  margin-top: 20px;
+}
+.lead.about-text {
+  font-size: 1.425rem;
+  color: 	#484F55
+}
 
-  }
+
+
+
+
+
+
+  @media (max-width: 1950px) {
+    .effect2 {
+      width: 1500px;
+    }
+    .lead.about-text {
+      font-size: 1.2rem;
+    
+    }
+    .grid-container {
+     
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* 3 columns with the middle one larger */
+   
+    }
+    .grid-item.Photo {
+      grid-column: 2/6;
+    }
+    .grid-item.about 
+    {
+      grid-column: 6/11;
+    }
+    .lead.about-text {
+      font-size: 1.30rem;
+    }
+   .red-line {
+    font-size: 40px;
+   }
+   .grid-item.about {
+    padding-right: 0px;
   
-  .about {
-    grid-column: 5 / 8; /* Spans middle and right columns */
-    grid-row: 1 / 2; /* Top row */
-    /* Other styles remain unchanged */
-  }
+  }}
+
+  @media (max-width: 1520px) {
+    .effect2 {
+      width: 1200px;
+    }
+    .red-line{
+      font-size: 30px;
+    }
+    .lead.about-text {
+      font-size: 1.17rem;
+    }
+    
+    
+  }  
+  @media (max-width: 1240px) {
+.effect2 {
+  width: 1000px;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .lead.about-text {
-    color: red;
-  }
-  .Photo {
-    grid-column: 2 / 5; /* Takes up the first column */
-    grid-row: 1 / 2; /* Top row */
-    /* Other styles remain unchanged */
-
-  }
-  
-  .about {
-    grid-column: 5 / 8; /* Spans middle and right columns */
-    grid-row: 1 / 2; /* Top row */
-    /* Other styles remain unchanged */
-  }
-
-}
-@media only screen and (max-width: 767px) {
-  .lead.about-text {
-    color: green;
-  }
-  .Photo {
-    display: none;
-  }
-  .grid-item.Photo {
-    display: none;
-  
-  }
-  .about {
-    grid-column: 2 / 8; /* Spans middle and right columns */
-    grid-row: 1 / 2; /* Top row */
-    /* Other styles remain unchanged */
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Styles for mobile devices 
-@media only screen and (max-width: 767px) {
+.lead.about-text {
+  font-size: 1.075rem;
+} .grid-container {
+    
+  grid-template-rows: 72.5% 27.5%; /* 2 rows that adjust to content size */
 
 }
-
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-}
-
-
-@media only screen and (min-width: 1025px) {
-
-}
-*/
+  }
+  @media (max-width: 1028px) {
+    .effect2{
+      width: 680px;
+    }
+    .grid-container {
+    
+      grid-template-rows: 75% 25%; /* 2 rows that adjust to content size */
+    
+    }
+    
+      }
