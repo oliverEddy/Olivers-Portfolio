@@ -225,3 +225,8 @@ padding-right: 15px;
 
 }
   }
+@media (max-width: 1028px) {
+  .effect2 {
+    width: 650px;
+  }
+}

@@ -36,3 +36,8 @@
         .third {
           width: 1000px;
         }}
+        @media (max-width: 1028px) {
+          .third {
+            width: 650px;
+          }
+        }
