@@ -1,3 +1,4 @@
+// Change website animations
 
 const header = {
   name: "Hello, I'm Oliver",
@@ -127,7 +128,7 @@ const social = {
 export {
 
   header,
-
+ 
   about,
   skillsBar,
   projects,
