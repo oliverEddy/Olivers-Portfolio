@@ -8,13 +8,13 @@
 
   top: 0; /* Aligns to the top of the viewport */
   right: 0; /* Aligns to the right of the viewport */
-  margin: 20px; /* Adds some space from the top and right edges */
+  margin: 1.25rem; /* Adds some space from the top and right edges */
   transform: translate(-6rem, 4rem);
 }
 
 .info-icon {
   /* Retain color, size, etc., but ensure it's properly aligned within the container */
-  font-size: 28px; /* Example size */
+  font-size: 1.75rem; /* Example size */
   color: white; /* Example color */
   cursor: pointer;
 }
@@ -50,9 +50,9 @@
   color: #fff; /* Retained text color */
   border: none;
   outline: none;
-  padding: 5px 15px;
-  padding-bottom: 7px; /* Adjusted for visual alignment */
-  border-radius: 3px; /* Retained border radius */
+  padding: 0.313rem 0.938rem;
+  padding-bottom: 0.438rem; /* Adjusted for visual alignment */
+  border-radius: 0.188rem; /* Retained border radius */
   font-size: 1rem; /* Retained font size */
   font-weight: 550;
 
@@ -61,12 +61,12 @@
 .info-tooltip::before {
     content: '';
     position: absolute;
-    top: -10px; /* Adjust this value to position the triangle correctly */
+    top: -0.625rem; /* Adjust this value to position the triangle correctly */
     left: 50%;
     transform: translateX(-50%);
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid rgba(0, 0, 0, 0.1); /* Match the tooltip's background color */
+    border-left: 0.625rem solid transparent;
+    border-right: 0.625rem solid transparent;
+    border-bottom: 0.625rem solid rgba(0, 0, 0, 0.1); /* Match the tooltip's background color */
   }
   
 

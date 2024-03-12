@@ -190,3 +190,26 @@
                         }
                       
                       }
+
+
+
+
+
+
+                      @media (max-height: 1111px) {
+                        .Header-grid {
+                          display: grid;
+                          grid-template-rows: 20% 1fr 1fr 1fr; /* Defines four rows */
+                   
+                        }
+                      }
+                  
+
+                      @media (max-height: 700px) {
+                        .Header-grid {
+                          display: grid;
+                          grid-template-rows: 12.5% 1fr 1fr 1fr; /* Defines four rows */
+                   
+                        }
+                      }
+                  
