@@ -1,23 +1,8 @@
-// Change website animations
-const animation = {
-  // make it false to switch off fade-up animation
-  animate: true,
-  // animation playing duration
-  duration: 750,
-  // if true, animation plays only once when element comes on screen
-  once: false,
-};
-// Change your display name on tha landing display
+
 const header = {
   name: "Hello, I'm Oliver",
 };
-const background = {
-  // Options: Snow or Particle
-  type: "Snow",
-  
-};
-// Write a para about yourself here
-// To update your image, go to './styles/images.css'
+
 const section2title = "About Me";
 const about = {
   paragraph:
@@ -140,9 +125,9 @@ const social = {
 };
 // Dont change anything here
 export {
-  animation,
+
   header,
-  background,
+
   about,
   skillsBar,
   projects,
