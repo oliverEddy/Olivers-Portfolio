@@ -1,31 +1,12 @@
-// Change website animations
-const animation = {
-  // make it false to switch off fade-up animation
-  animate: true,
-  // animation playing duration
-  duration: 750,
-  // if true, animation plays only once when element comes on screen
-  once: false,
-};
-// Change your display name on tha landing display
 const header = {
   name: "Hello, I'm Oliver",
 };
-const background = {
-  // Options: Snow or Particle
-  type: "Snow",
-  
-};
-// Write a para about yourself here
-// To update your image, go to './styles/images.css'
 const section2title = "About Me";
 const about = {
   paragraph:
    "I have always been fascinated by technology and its inner workings. When I was 14 I disassembled and reassembled an HP tower numerous times in preparation to build my PC. This passion for construction and technology naturally evolved into an interest in software development. In 2022, I began my software development education at the Developers Institute. There, I learned the fundamentals including version control, effective communication, and web development using the PERN and MERN stacks. Following the closure of the Developers Institute, I continued with my second year of studies at Yoobee College, where I delved into cybersecurity, mobile development, and networking. Having earned diplomas at levels 5 and 6, I am ready to take the next steps in my developer career. I enjoy collaboration and thrive in team environments, I am passionate about front‑end web design and the ever‑evolving technology we use as developers to deliver gratifying user experiences."
     
 };
-// Edit your skill and the percentage you know about it
-// To Add a skill, copy any one below and paste it after the last comma
 const skillsBar = [
   {
     name: "HTML",
@@ -81,16 +62,10 @@ const skillsBar = [
   faClass: "fab fa-shopify",
 },
 
- /* {
-    name: "Database",
-    // svg: '',
-    faClass: "fas fa-database",
-  },*/
+
 
 ];
-// Edit your projects, its name, your skills used to make it, and the url.
-// You can omit freely anything if you dont have it
-// To Add a Project, copy any one below and paste it after the last comma and increment the id's project number
+
 const section3Title = "Projects";
 const projects = [
   {
@@ -128,8 +103,7 @@ const contact = {
     "What ever it might be about, feel free to reach out!",
     "Fill in the email form with your details and I will get back to you."
   ],
-  copyright: "Kaustubh Mishra",
-  contactUrl: "",
+
 };
 // Paste your respective social media links. You can omit any if you dont have it
 // Upload your resume in your drive, get the shaareable link and paste it in the resume section
@@ -140,9 +114,9 @@ const social = {
 };
 // Dont change anything here
 export {
-  animation,
+
   header,
-  background,
+
   about,
   skillsBar,
   projects,

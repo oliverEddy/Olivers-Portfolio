@@ -21,19 +21,3 @@
   .pp-head {
     text-align: center;
   }
-  /*
-  @media (max-width: 800px) {
-    .third {
-      width: 100%;
-    }
-
-    .third {
-      padding: 5%;
-    }
-    .pp-head-line {
-        width: 70%;
-      }
-      .red-line::before {
-        bottom: 590px;
-      }
-  }*/
