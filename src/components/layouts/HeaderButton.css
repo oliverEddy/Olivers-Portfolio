@@ -9,7 +9,7 @@
     padding-right: 1.2rem;
     font-weight: 600;
     font-size: 1.2rem;
-    border-radius: 3px;
+    border-radius: 0.188rem;
  
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 position: absolute;
@@ -61,11 +61,11 @@ position: absolute;
   /* Adjust the .fa-hand-point-down icon if it's inside the .see button */
   .see .fa-hand-point-down {
     color: #fff;
-    font-size: 20px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 15px;
-    padding-right: 7px;
+    font-size: 1.25rem;
+    padding-top: 0.438rem;
+    padding-bottom: 0.438rem;
+    padding-left: 0.938rem;
+    padding-right: 0.438rem;
   }
   
   .see:active {
@@ -122,7 +122,7 @@ position: absolute;
         padding-right: 1rem;
       }
       .see .fa-hand-point-down {
-        font-size: 15px;
+        font-size: 0.938rem;
       }
     }
     
@@ -135,7 +135,7 @@ position: absolute;
         padding-right: 1rem;
       }
       .see .fa-hand-point-down {
-        font-size: 13px;
+        font-size: 0.813rem;
       }
     }
     @media (max-width: 300px) {
@@ -145,6 +145,6 @@ position: absolute;
       }
     
       .see .fa-hand-point-down {
-        font-size: 11px;
+        font-size: 0.688rem;
       }
     }
