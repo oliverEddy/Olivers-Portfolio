@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
 }
 .git-form {
-    width: 1160px;
+    width: 72.5rem;
     box-sizing: border-box;
     display: block;
     background-color:  rgba(0, 0, 0, 0.55);
@@ -41,8 +41,8 @@
   .git-cont .fab {
 
    
-    font-size: 35px;
-    height: 30px;
+    font-size: 2.188rem;
+    height: 2.188rem;
     text-align: center;
     text-decoration: none;
     color: var(--primary-color);
@@ -54,9 +54,9 @@
   }
   .git-cont .fas {
     vertical-align: bottom;
-    font-size: 40px;
-    height: 30px;
-    margin: 25px;
+    font-size: 2.5rem;
+    height: 1.875rem;
+    margin: 1.563rem;
     text-align: center;
     text-decoration: none;
     color: var(--primary-color);
@@ -64,8 +64,8 @@
   }
   .git-cont .fab,
   .git-cont .fas {
-      font-size: 30px; /* Scale down the icon size */
-      margin: 25px;
+      font-size: 1.875rem;
+      margin: 1.563rem;
   }
 
   /* Adjust the container, row, and columns for better spacing */
@@ -91,26 +91,26 @@
   .half form input,
 textarea {
   width: 100%;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  margin: 0.625rem;
+  padding: 0.625rem;
+  border-radius: 0.313rem;
   outline: 0;
   box-shadow: none;
   border: 1px solid #777;
   background-color: #ffffff;
 }
 .half form textarea {
-  padding-bottom: 45px;
+  padding-bottom: 2.813rem
 }
 .half form input:focus,
 textarea:focus {
-  border-radius: 5px;
+  border-radius: 0.313rem;
   outline: 0;
   box-shadow: none;
   border: 1px solid var(--primary-color);
 }
 .half form button {
-  padding: 10px 15px;
+  padding: 0.625rem 0.938rem;
   font-size: 1rem;
   border-radius: 2rem;
   color: #fff;
@@ -118,8 +118,8 @@ textarea:focus {
   box-shadow: none;
   outline: 0;
   border: none;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: 1.25rem;
+  margin-left: 0.625rem;
 }
 .half form button:hover {
   background-color: var(--hover-color);
@@ -138,12 +138,12 @@ textarea:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Adjust the space between icons as needed */
+  gap: 0.625rem;
 }
 
 /* Adjustments for individual icons, if needed */
 .inline-block a i {
-  font-size: 24px; /* Ensure uniform font size */
+  font-size: 1.5rem;
   vertical-align: middle; /* Helps with vertical alignment */
 }
 
@@ -182,7 +182,7 @@ textarea:focus {
     }
   
     .col-12.col-sm-6.half {
-      padding: 0 15px; /* Adjust padding for better spacing */
+      padding: 0 0.938rem
     }
 
     .half p {
@@ -201,14 +201,14 @@ textarea:focus {
         }
         .git-head-div {
             font-size: 1.5rem; /* Reduce the font size for headings */
-            padding-bottom: 20px; /* Adjust bottom padding */
+            padding-bottom: 1.25rem
         }
         .git-head {
             font-size: 2rem;
           }
           .git-cont .fab,
           .git-cont .fas {
-              font-size: 28px; /* Adjust social icons size */
+              font-size: 1.75rem;
           }
           .lead {
             font-size: 0.9rem; /* Adjust paragraph font size */
@@ -216,12 +216,12 @@ textarea:focus {
       .half form input,
       .half form textarea {
         font-size: 0.9rem; /* Adjust font size for form elements */
-        padding: 12px; /* Increase padding for touch targets */
+        padding: 0.75rem; /* Increase padding for touch targets */
       }
     
       .half form button {
         font-size: 0.9rem; /* Adjust button font size */
-        padding: 10px 20px; /* Adjust button padding */
+        padding: 0.625rem 1.25rem; /* Adjust button padding */
       }
     }
 
