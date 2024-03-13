@@ -41,6 +41,10 @@
   right: 10px;
   left: auto;
 }
+.about-text-top, .about-text-bottom {
+  display: none !important;
+}
+
 .About-title-box {
   box-sizing: border-box;
 
@@ -94,7 +98,7 @@
 .grid-item.about {
   display: flex; /* Or 'block' if your content is not flex-based */
   flex-direction: column; /* Useful for flex; adjust as needed */
-  justify-content: space-around; /* Adjusts child elements spacing; useful for flex */
+ 
   align-items: stretch; /* Stretches child items to fill the container; useful for flex */
   width: 100%; /* Ensures it fills its grid area */
   height: 100%; /* Ensures it fills its vertical space in the grid */
@@ -134,6 +138,8 @@ padding-right: 15px;
   grid-column: 1 / -1; /* Stretches across all columns */
   grid-row: 2 / 3; /* Second row */
   overflow: hidden; /* Ensures content doesn't spill out */
+  width: 100%;
+  justify-self: center;
 }
 
 
@@ -160,7 +166,8 @@ padding-right: 15px;
 }
 .lead.about-text {
   font-size: 1.425rem;
-  color: 	#484F55
+  color: 	#484F55;
+  font-weight: 350;
 }
 
 
@@ -224,29 +231,170 @@ padding-right: 15px;
   grid-template-rows: 72.5% 27.5%; /* 2 rows that adjust to content size */
 
 }
-  }
-  @media (max-width: 1028px) {
-    .effect2{
-      width: 680px;
-    }
-    .grid-container {
-    
-      grid-template-rows: 30% 40% 30%; /* 2 rows that adjust to content size */
-    padding-left: 2.5rem;
-padding-right: 2.5rem;
-  }
-    .grid-item.Photo {
-    
-      grid-row: 1/2;
-      grid-column: 7/12;
-    }
-    .grid-item.about {
-      grid-column: 1/7;
-      padding: 1rem;
-      grid-row: 1/3;
+.grid-container {
+  grid-template-rows: 40% 30% 30%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  padding-top: 1rem;
 
-    }
+}
+.about-text-original {
+  display: none !important;
+}
+.about-text-top, .about-text-bottom {
+  display: block !important;
+}
+.about-text-bottom {
+  grid-row: 2/3;
+}
 #Skills {
   grid-row: 3/4;
 }
-      }
+.grid-item.about {}
+
+.About-title-box {
+margin-left: 48%;
+margin-top: 0;
+}
+.about-subcontainer-top {
+  position: relative;
+  margin-left: 48%;
+  margin-right: 12%;
+  
+}
+.about-subcontainer-bottom {
+position: relative;
+margin-left: 0;
+width: 90%;
+margin-top: 3rem;
+}
+.grid-item.about {
+  grid-column: 2 / 11;
+  grid-row: 1 / 3;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+.lead.about-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  }
+.grid-item.Photo {
+  margin-top: 1rem;
+  
+}
+  }
+@media (max-width: 1260px) {
+  .effect2 {
+    width: 850px;
+  }
+  .grid-container {
+    grid-template-rows: 40% 30% 30%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    padding-top: 1rem;
+
+  }
+  .about-text-original {
+    display: none !important;
+  }
+  .about-text-top, .about-text-bottom {
+    display: block !important;
+  }
+  .about-text-bottom {
+    grid-row: 2/3;
+  }
+  #Skills {
+    grid-row: 3/4;
+  }
+  .grid-item.about {}
+
+.About-title-box {
+  margin-left: 48%;
+  margin-top: 0;
+}
+  .about-subcontainer-top {
+    position: relative;
+    margin-left: 48%;
+    margin-right: 12%;
+    
+  }
+  .about-subcontainer-bottom {
+  position: relative;
+  margin-left: 0;
+  width: 90%;
+  margin-top: 2rem;
+  }
+  .grid-item.about {
+    grid-column: 2 / 10;
+    grid-row: 1 / 3;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+  .lead.about-text {
+    font-size: 1.18rem;
+    font-weight: 300;
+  }
+  .grid-item.Photo {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1028px) {
+  .effect2 {
+    width: 750px;
+  }
+.lead.about-text {
+  font-size: 1.1rem;
+
+}
+.about-subcontainer-bottom {
+
+  margin-top: 1rem;
+  }
+  .grid-item.Photo {
+    display: flex;
+    display: grid;
+  }
+  #Skills {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .effect2 {
+    width: 650px;
+  }
+  .lead.about-text {
+    font-size: 1.015rem;
+  }
+}
+@media (max-width: 760px) {
+  .effect2 {
+    width: 500px;
+    padding: 3rem;
+    padding-top: 1rem;
+  }
+  #Skills {
+    display: none;
+  }
+  .grid-container {
+    grid-template-rows: 35% 65%;
+    
+  }
+  .grid-item.Photo {
+    grid-column: 1/10;
+    margin: 0;
+
+  }
+  .about-text-original {
+    display: block !important;
+  }
+  .about-text-top, .about-text-bottom {
+    display: none !important;
+  }
+.grid-item.about {
+  grid-row: 2/3;
+  grid-column: 1/10;
+}
+.About-title-box {
+  margin-left: 0;
+}
+
+}
+/*continue to scale mobile lay out down*/

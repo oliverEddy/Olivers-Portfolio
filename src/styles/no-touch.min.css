@@ -151,7 +151,7 @@ input:checked + .slider:before {
   background: var(--primary-color);
 }
 
-*/ @media (max-width: 800px) {
+ @media (max-width: 800px) {
   .underline {
     text-decoration-color: (0, 0, 0, 0.1);
   }
@@ -166,7 +166,7 @@ input:checked + .slider:before {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .col-12 {
     flex: 0 0 auto;
     width: 95%;

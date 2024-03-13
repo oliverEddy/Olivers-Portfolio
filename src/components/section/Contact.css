@@ -190,8 +190,13 @@ textarea:focus {
       font-size: 1.4rem;
     }
   }
-/* 1 between */
-    @media (max-width: 1500px) {
+  @media (max-width: 1500px) {
+    .git-form {
+      width:800px ;
+    }
+  }
+/* 1 between  @1500px */ 
+    @media (max-width: 1260px) {
         .git-form {
             width: 650px; /* Adjust form width for tablets */
             padding-left: 1rem;
@@ -225,16 +230,6 @@ textarea:focus {
       }
     }
 
-@media (max-width: 766px) {
-  .git-form {
-    width: 580px; /* Adjust form width for tablets */
-    padding-left: 0.75rem;
-            padding-right: 0.75rem;
-          
- 
-}
-}
-
         
 
 
@@ -242,12 +237,12 @@ textarea:focus {
 
 
 
-              @media (max-width: 600px) {
+              @media (max-width: 760px) {
                 .lead {
                   display: none;
                 }
                 .git-form {
-                  width: 90%;
+                  width: 500px;
                 }
               .git-head-div {
                 padding-bottom: 0;

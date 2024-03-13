@@ -34,5 +34,23 @@
 
       @media (max-width: 1500px) {
         .third {
-          width: 1040px;
+          width: 1000px;
         }}
+        @media (max-width: 1260px) {
+          .third {
+            width: 850px;
+          }}
+        @media (max-width: 1028px) {
+          .third {
+            width: 750px;
+          }
+        }
+        @media (max-width: 900px) {
+          .third {
+            width: 650px;
+          }}
+          @media (max-width: 760px) {
+            .third {
+              width: 500px;
+           
+            }}
