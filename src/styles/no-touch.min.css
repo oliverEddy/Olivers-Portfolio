@@ -166,7 +166,7 @@ input:checked + .slider:before {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .col-12 {
     flex: 0 0 auto;
     width: 95%;
