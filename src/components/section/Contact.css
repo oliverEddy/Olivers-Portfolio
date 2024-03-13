@@ -190,8 +190,13 @@ textarea:focus {
       font-size: 1.4rem;
     }
   }
-/* 1 between */
-    @media (max-width: 1500px) {
+  @media (max-width: 1500px) {
+    .git-form {
+      width:800px ;
+    }
+  }
+/* 1 between  @1500px */ 
+    @media (max-width: 1260px) {
         .git-form {
             width: 650px; /* Adjust form width for tablets */
             padding-left: 1rem;
