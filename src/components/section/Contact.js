@@ -75,6 +75,10 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <a href="https://www.instagram.com/kuronekonopei" target="_blank" rel="noopener noreferrer" className="watermark">
+  Art by @kuronekonopei
+</a>
+
     </div>
   );
 };

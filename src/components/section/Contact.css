@@ -123,6 +123,19 @@ textarea:focus {
   vertical-align: middle;
 }
 
+.watermark {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1rem; 
+  z-index: 1000; 
+  font-weight: 200;
+}
+
+
 @media (max-width: 1900px) {
   .git-form {
     width: 1000px;
@@ -190,6 +203,9 @@ textarea:focus {
     font-size: 0.9rem;
     padding: 0.625rem 1.25rem;
   }
+  .watermark {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 760px) {
@@ -213,6 +229,9 @@ textarea:focus {
   }
   .inline-block {
     margin-top: 15px;
+  }
+  .watermark {
+    font-size: 0.88rem;
   }
 }
 
