@@ -1,9 +1,6 @@
 .image-project {
     width: 100% !important;
-  }
-  .image-project {
     height: 18.75rem;
-    width: auto;
     margin-bottom: 1.25rem;
     overflow: hidden;
     cursor: pointer !important;
@@ -25,13 +22,11 @@
     -o-transition: all 0.5s;
     transition: all 0.5s;
   }
-
 .project-card {
   padding: 0.938rem;
-  margin-top: 0.938rem;
   box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
   border: 0.031px solid #eee;
-margin: 1%;
+  margin: 1%;
 }
 .project-card h2 {
   color: var(--primary-color);
@@ -48,9 +43,3 @@ margin: 1%;
   font-size: 1rem;
   margin-left: 3%;
 }
-/*
-@media (max-width: 800px) {
-  .project-card {
-    width: 100% !important;
-  }
-}*/

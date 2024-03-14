@@ -1,150 +1,122 @@
 .see {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none; 
-    outline: none;
-
-    padding: 1rem;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    font-weight: 600;
-    font-size: 1.2rem;
-    border-radius: 0.188rem;
- 
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-position: absolute;
-    text-align: center;
-
-   
-    transform: translateX(-50%);
-    --offset: 3px; 
-    overflow: hidden; 
-    display: flex;
-    
-  
-  }
-  .see .text-icon-wrapper {
-    position: relative; 
-    z-index: 2; 
-    color: #fff; /* Ensures text is white */
-    
-  }
-  .see, .see .text-icon-wrapper {
-    white-space: nowrap;
-  }
-  
-  
-  /* Adding conic gradient animation */
-  .see::before {
-    content: '';
-    background: conic-gradient(transparent 270deg, white, transparent);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    aspect-ratio: 1;
-    width: 100%;
-    animation: rotate 2s linear infinite;
-  }
-  
-  /* Overlay effect */
-  .see::after {
-    content: '';
-    background: inherit;
-    border-radius: inherit;
-    position: absolute;
-    inset: var(--offset);
-    height: calc(100% - 2 * var(--offset));
-    width: calc(100% - 2 * var(--offset));
-  }
-  
-  /* Adjust the .fa-hand-point-down icon if it's inside the .see button */
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none; 
+  outline: none;
+  font-weight: 600;
+  border-radius: 0.188rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  --offset: 3px; 
+  overflow: hidden; 
+  display: flex;
+}
+.see .text-icon-wrapper {
+  position: relative; 
+  z-index: 2; 
+  color: #fff; 
+}
+.see, .see .text-icon-wrapper {
+  white-space: nowrap;
+}
+.see::before {
+  content: '';
+  background: conic-gradient(transparent 270deg, white, transparent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 2s linear infinite;
+}
+.see::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
   .see .fa-hand-point-down {
-    color: #fff;
-    font-size: 1.25rem;
-    padding-top: 0.438rem;
-    padding-bottom: 0.438rem;
-    padding-left: 0.938rem;
-    padding-right: 0.438rem;
+  color: #fff;
+  font-size: 1.25rem;
+  padding-top: 0.438rem;
+  padding-bottom: 0.438rem;
+  padding-left: 0.938rem;
+  padding-right: 0.438rem;
+}
+
+.see:active {
+  outline: 0;
+}
+.see:hover {
+  background-color: var(--hover-color);
+}
+.see::before, .see::after {
+  z-index: 1; 
+}
+.see .text-content {
+  position: relative;
+  z-index: 2; 
+  color: #fff; 
+}
+.see .fa-hand-point-down {
+  position: relative;
+  z-index: 2; 
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
   }
-  
-  .see:active {
-    outline: 0;
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
   }
+}
+@media (max-width: 1260px)  {
   
-  .see:hover {
-    background-color: var(--hover-color);
-  
-  }
-  /* Reverse the animation on hover */
-  
-  .see::before, .see::after {
-    z-index: 1; /* Lower than the text */
-  }
-  
-  /* Wrap the button text and icon in a span with class="text-content" for this CSS to apply */
-  .see .text-content {
-    position: relative;
-    z-index: 2; /* Ensures text is above the pseudo-elements */
-    color: #fff; /* Ensure text color is visible against the background */
-  }
-  
-  /* Existing styles for .see remain unchanged */
-  
-  /* Update the z-index for the icon if it's outside .text-content */
-  .see .fa-hand-point-down {
-    position: relative;
-    z-index: 2; /* Ensure the icon is also above the pseudo-elements */
-  }
-  /* Keyframes for the rotate animation */
-  @keyframes rotate {
-    from {
-      transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
-    }
-    to {
-      transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
-    }
-  }
-  @media (max-width: 1260px)  {
-    
+  .see{
+    font-size: 1.1rem;
+    padding: 0.8rem ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }}
+
+@media (max-width: 434px) {
     .see{
-      font-size: 1.1rem;
+      font-size: 1rem;
       padding: 0.8rem ;
       padding-left: 1rem;
       padding-right: 1rem;
-    }}
-
-     @media (max-width: 434px) {
-      .see{
-        font-size: 1rem;
-        padding: 0.8rem ;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-      .see .fa-hand-point-down {
-        font-size: 0.938rem;
-      }
     }
+    .see .fa-hand-point-down {
+      font-size: 0.938rem;
+    }
+  }
+  
+  @media (max-width: 365px) {
     
-    @media (max-width: 365px) {
-      
-      .see{
-        font-size: 0.85rem;
-        padding: 0.8rem ;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
-      .see .fa-hand-point-down {
-        font-size: 0.813rem;
-      }
+    .see{
+      font-size: 0.85rem;
+      padding: 0.8rem ;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
-    @media (max-width: 300px) {
-     
-      .see{
-        font-size: 0.75rem;
-      }
-    
-      .see .fa-hand-point-down {
-        font-size: 0.688rem;
-      }
+    .see .fa-hand-point-down {
+      font-size: 0.813rem;
     }
+  }
+  @media (max-width: 300px) {
+   
+    .see{
+      font-size: 0.75rem;
+    }
+  
+    .see .fa-hand-point-down {
+      font-size: 0.688rem;
+    }
+  }
