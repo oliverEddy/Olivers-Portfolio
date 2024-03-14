@@ -1,94 +1,77 @@
 .parallax {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .parallax {
-    background-image: url('../../Images/kuronekonopei4\ 2.jpeg');
-
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../Images/FooterImg.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .git-form {
-    width: 72.5rem;
-    box-sizing: border-box;
-    display: block;
-    background-color:  rgba(0, 0, 0, 0.55);
-    border-radius: 4.5rem;
-    max-height: 80vh;
-    padding: 2rem;
-    padding-top: 1rem;
-    
-  }
-  .git-head-div {
-    box-sizing: border-box;
-  
+  width: 72.5rem;
+  box-sizing: border-box;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 4.5rem;
+  max-height: 80vh;
+  padding: 2rem;
+  padding-top: 1rem;
+}
+.git-head-div {
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: 500;
+}
+.git-cont {
+  display: inline-block;
+  padding-top: 0.5rem;
+}
 
-    
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
-  }
-  .git-cont {
-    display: inline-block;
-  }
-  .git-cont .fab {
+.git-cont .fab {
+  font-size: 2.188rem;
+  height: 2.188rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: 0.5;
+}
+.git-cont .fab:hover,
+.git-cont .fas:hover {
+  color: var(--hover-color);
+}
+.git-cont .fas {
+  vertical-align: bottom;
+  font-size: 2.5rem;
+  height: 1.875rem;
+  margin: 1.563rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: 0.5;
+}
+.git-cont .fab,
+.git-cont .fas {
+  font-size: 1.875rem;
+  margin: 1.563rem;
+}
 
-   
-    font-size: 2.188rem;
-    height: 2.188rem;
-    text-align: center;
-    text-decoration: none;
-    color: var(--primary-color);
-    transition: 0.5;
-  }
-  .git-cont .fab:hover,
-  .git-cont .fas:hover {
-    color: var(--hover-color);
-  }
-  .git-cont .fas {
-    vertical-align: bottom;
-    font-size: 2.5rem;
-    height: 1.875rem;
-    margin: 1.563rem;
-    text-align: center;
-    text-decoration: none;
-    color: var(--primary-color);
-    transition: 0.5;
-  }
-  .git-cont .fab,
-  .git-cont .fas {
-      font-size: 1.875rem;
-      margin: 1.563rem;
-  }
-
-  /* Adjust the container, row, and columns for better spacing */
-  .git-cont {
-    padding-top: 0.5rem;
-  }
-
- 
-  .lead {
-    font-weight: 400;
-    margin-left: 2rem;
-    margin-right: 2rem;
-
-  }.half p {
-
+.lead {
+  font-weight: 400;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.half p {
   text-align: center;
   color: #fff;
 }
-  .half {
-    display: inline-block;
-    vertical-align: top;
-  }
-  .half form input,
+.half {
+  display: inline-block;
+  vertical-align: top;
+}
+.half form input,
 textarea {
   width: 100%;
   margin: 0.625rem;
@@ -100,7 +83,7 @@ textarea {
   background-color: #ffffff;
 }
 .half form textarea {
-  padding-bottom: 2.813rem
+  padding-bottom: 2.813rem;
 }
 .half form input:focus,
 textarea:focus {
@@ -124,154 +107,117 @@ textarea:focus {
 .half form button:hover {
   background-color: var(--hover-color);
 }
-.half form {
-
-}/* Add or update in Contact.css */
 .d-flex {
   display: flex;
-  justify-content: center; /* Center icons horizontally */
-  align-items: center; /* Align icons vertically */
+  justify-content: center;
+  align-items: center;
 }
-
-/* This class is for the container of the social and download icons */
 .inline-block {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
 }
-
-/* Adjustments for individual icons, if needed */
 .inline-block a i {
   font-size: 1.5rem;
-  vertical-align: middle; /* Helps with vertical alignment */
+  vertical-align: middle;
 }
 
-/* Specific adjustments for the download icon, if necessary */
-.inline-block a .fas.fa-download {
-  /* Example: Adjust margin or padding if the icon still doesn't align perfectly */
+@media (max-width: 1900px) {
+  .git-form {
+    width: 1000px;
+  }
+  .git-head-div {
+    font-size: 1.8rem;
+  }
+  .git-head {
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .lead {
+    font-size: 0.95rem;
+  }
+
+  .half form input,
+  .half form textarea,
+  .half form button {
+    font-size: 0.9rem;
+  }
+
+  .col-12.col-sm-6.half {
+    padding: 0 0.938rem;
+  }
+
+  .half p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1500px) {
+  .git-form {
+    width: 800px;
+  }
+}
+/* 1 between  @1500px */
+@media (max-width: 1260px) {
+  .git-form {
+    width: 650px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .git-head-div {
+    font-size: 1.5rem;
+    padding-bottom: 1.25rem;
+  }
+  .git-head {
+    font-size: 2rem;
+  }
+  .git-cont .fab,
+  .git-cont .fas {
+    font-size: 1.75rem;
+  }
+  .lead {
+    font-size: 0.9rem;
+  }
+  .half form input,
+  .half form textarea {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .half form button {
+    font-size: 0.9rem;
+    padding: 0.625rem 1.25rem;
+  }
 }
 
-
-  @media (max-width: 1900px) {
-    .git-form {
-      width: 1000px;
-    }
-    .git-head-div {
-        font-size: 1.8rem; /* Scale down the font size */
-       
-        
-    }
-    .git-head {
-        white-space: nowrap;
-        text-align: center;
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        
-      }
-      .lead {
-        font-size: 0.95rem; /* Scale down the font size */
-    }
-   
-
-    .half form input,
-    .half form textarea,
-    .half form button {
-      font-size: 0.9rem; /* Scale down the font size */
-     
-    }
-  
-    .col-12.col-sm-6.half {
-      padding: 0 0.938rem
-    }
-
-    .half p {
-     
-      font-size: 1.4rem;
-    }
+@media (max-width: 760px) {
+  .lead {
+    display: none;
   }
-  @media (max-width: 1500px) {
-    .git-form {
-      width:800px ;
-    }
+  .git-form {
+    width: 500px;
   }
-/* 1 between  @1500px */ 
-    @media (max-width: 1260px) {
-        .git-form {
-            width: 650px; /* Adjust form width for tablets */
-            padding-left: 1rem;
-            padding-right: 1rem;
-          
-         
-        }
-        .git-head-div {
-            font-size: 1.5rem; /* Reduce the font size for headings */
-            padding-bottom: 1.25rem
-        }
-        .git-head {
-            font-size: 2rem;
-          }
-          .git-cont .fab,
-          .git-cont .fas {
-              font-size: 1.75rem;
-          }
-          .lead {
-            font-size: 0.9rem; /* Adjust paragraph font size */
-        }
-      .half form input,
-      .half form textarea {
-        font-size: 0.9rem; /* Adjust font size for form elements */
-        padding: 0.75rem; /* Increase padding for touch targets */
-      }
-    
-      .half form button {
-        font-size: 0.9rem; /* Adjust button font size */
-        padding: 0.625rem 1.25rem; /* Adjust button padding */
-      }
-    }
+  .git-head-div {
+    padding-bottom: 0;
+  }
+  .git-form {
+    padding-bottom: 0rem;
+  }
+  .half form button {
+    display: flex;
+    align-self: center; 
+    margin: 0 auto; 
+    margin-top: 20px;
+  }
+  .inline-block {
+    margin-top: 15px;
+  }
+}
 
-        
-
-
-
-
-
-
-              @media (max-width: 760px) {
-                .lead {
-                  display: none;
-                }
-                .git-form {
-                  width: 500px;
-                }
-              .git-head-div {
-                padding-bottom: 0;
-              }
-              .git-form {
-                padding-bottom: 0rem;
-            
-              }
-        
-              .half form button {
-                display: flex;
-                align-self: center; /* Additional centering to ensure the button aligns perfectly in the center */
-             
-                margin: 0 auto; /* Alternative method for horizontal centering if flexbox is not preferred */
-                margin-top: 20px;
-              }
-              .inline-block {
-                margin-top: 15px;
-              }
-            }
-           
-           
-           
-           
-           
-              @media (max-width: 360px) {
-              .git-form {
-                max-width: 90%;
-              }
-             }
-              
-
+@media (max-width: 360px) {
+  .git-form {
+    max-width: 90%;
+  }
+}
