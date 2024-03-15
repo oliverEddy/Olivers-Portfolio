@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
 }
 .git-form {
-  width: 72.5rem;
+  width: 1000px;
   box-sizing: border-box;
   display: block;
   background-color: rgba(0, 0, 0, 0.55);
@@ -24,12 +24,12 @@
   box-sizing: border-box;
   color: #fff;
   font-weight: 500;
+  font-size: 1.8rem;
 }
 .git-cont {
   display: inline-block;
   padding-top: 0.5rem;
 }
-
 .git-cont .fab {
   font-size: 2.188rem;
   height: 2.188rem;
@@ -57,16 +57,18 @@
   font-size: 1.875rem;
   margin: 1.563rem;
 }
-
 .lead {
   font-weight: 400;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 1.8rem;
+  font-size: 1rem;
 }
 .half p {
   text-align: center;
   color: #fff;
+  font-size: 1.5rem;
+  font-weight: 350;
 }
 .half {
   display: inline-block;
@@ -123,48 +125,30 @@ textarea:focus {
   font-size: 1.5rem;
   vertical-align: middle;
 }
+.git-head {
+  white-space: nowrap;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
 
+.half form input,
+.half form textarea,
+.half form button {
+  font-size: 0.9rem;
+}
 
-  .git-form {
-    width: 1000px;
-  }
-  .git-head-div {
-    font-size: 1.8rem;
-  }
-  .git-head {
-    white-space: nowrap;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-  .lead {
-    font-size: 1rem;
-  }
-
-  .half form input,
-  .half form textarea,
-  .half form button {
-    font-size: 0.9rem;
-  }
-
-  .col-12.col-sm-6.half {
-    padding: 0 0.938rem;
-  }
-
-  .half p {
-    font-size: 1.5rem;
-    font-weight: 350;
-  }
+.col-12.col-sm-6.half {
+  padding: 0 0.938rem;
+}
 
 @media (max-width: 1500px) {
   .git-form {
     width: 800px;
   }
   .lead {
-
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-
   }
 }
 /* 1 between  @1500px */
@@ -186,8 +170,8 @@ textarea:focus {
     font-size: 1.75rem;
   }
   .lead {
-font-weight: 350;
-font-size: 1.25rem !important;
+    font-weight: 350;
+    font-size: 1.25rem !important;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 1.2rem;
@@ -210,17 +194,16 @@ font-size: 1.25rem !important;
   }
   .git-form {
     width: 500px;
+    padding-bottom: 0rem;
   }
   .git-head-div {
     padding-bottom: 0;
   }
-  .git-form {
-    padding-bottom: 0rem;
-  }
+
   .half form button {
     display: flex;
-    align-self: center; 
-    margin: 0 auto; 
+    align-self: center;
+    margin: 0 auto;
     margin-top: 20px;
   }
   .inline-block {

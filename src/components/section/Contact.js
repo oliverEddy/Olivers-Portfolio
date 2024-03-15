@@ -40,18 +40,15 @@ const Contact = () => {
               </form>
             </div>
             <div className="col-12 col-sm-6 half">
-              <p className="lead">
-              {contact.pitch.map((line, index) => (
-  // Omitting the first sentence on screens narrower than or equal to 1028px
-  !(index === 0 && width <= 100) && (
+            <p className="lead">
+  {contact.pitch.map((line, index) => (
     <React.Fragment key={index}>
       {line}
       {index < contact.pitch.length - 1 && <><br /><br /></>}
     </React.Fragment>
-  )
-))}
+  ))}
+</p>
 
-              </p>
               <div className="d-flex justify-content-center align-items-center flex-column">
     <div className="inline-block">
         {social.linkedin && (
