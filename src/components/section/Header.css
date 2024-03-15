@@ -100,7 +100,7 @@
     font-size: 1.3rem;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 550px) {
   .Header h1 {
     font-size: 3rem;
   }
@@ -133,19 +133,5 @@
   }
   .Header p {
     font-size: 0.58rem;
-  }
-}
-
-@media (max-height: 1111px) {
-  .Header-grid {
-    display: grid;
-    grid-template-rows: 20% 1fr 1fr 1fr;
-  }
-}
-
-@media (max-height: 700px) {
-  .Header-grid {
-    display: grid;
-    grid-template-rows: 12.5% 1fr 1fr 1fr;
   }
 }
