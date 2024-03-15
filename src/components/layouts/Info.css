@@ -64,7 +64,7 @@
 .info-spec {
   margin-bottom: 0.25rem;
 }
-@media (max-width: 1220px) {
+@media (max-width: 1260px) {
 .info-container {
   display: none;
 }
