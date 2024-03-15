@@ -32,12 +32,6 @@
     width: 1210px;
   }
 }
-
-@media (max-width: 1500px) {
-  .third {
-    width: 1000px;
-  }
-}
 @media (max-width: 1260px) {
   .third {
     width: 850px;

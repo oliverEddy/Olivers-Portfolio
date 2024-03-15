@@ -142,15 +142,6 @@ textarea:focus {
   padding: 0 0.938rem;
 }
 
-@media (max-width: 1500px) {
-  .git-form {
-    width: 800px;
-  }
-  .lead {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-}
 /* 1 between  @1500px */
 @media (max-width: 1260px) {
   .git-form {
