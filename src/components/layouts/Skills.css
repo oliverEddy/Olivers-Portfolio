@@ -40,16 +40,10 @@
 @media (max-width: 1900px) {
   .skill__square i,
   .skill__square svg {
-    font-size: 2.594rem !important; /* Smaller font size for icons */
+    font-size: 2.45rem !important; /* Smaller font size for icons */
    
   }
 }
 
-@media (max-width: 1500px) {
-  .skill__square i,
-  .skill__square svg {
-    font-size: 2.125rem !important; /* Smaller font size for icons */
-   
-  }
-}
+
 
