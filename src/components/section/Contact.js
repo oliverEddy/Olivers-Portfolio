@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { contact, section5Title, social } from "../../profile";
 import "./Contact.css";
-
-import { useState, useEffect } from "react";
 
 function useWindowSize() {
   const [size, setSize] = useState([window.innerWidth, 0]);
@@ -19,9 +17,52 @@ function useWindowSize() {
   return size;
 }
 
-
 const Contact = () => {
-  const [width] = useWindowSize(); // Using the custom hook to get current window width
+  const [width] = useWindowSize(); // Not directly used in the updated code but retained for future use.
+  
+  // State to manage form data
+  const [formState, setFormState] = useState({
+    firstname: '',
+    Email: '',
+    Subject: '',
+    message: '',
+  });
+
+  // Update form state on input change
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormState({ ...formState, [name]: value });
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    // Sending data to Formspree
+    const response = await fetch('https://formspree.io/f/xqkrlrqv', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formState),
+    });
+
+    if (response.ok) {
+      // Clear the form fields by resetting form state
+      setFormState({
+        firstname: '',
+        Email: '',
+        Subject: '',
+        message: '',
+      });
+      // Optionally, display a success message or handle the response further
+      alert("Thank you for your message. It has been sent.");
+    } else {
+      // Optionally, handle errors
+      alert("There was a problem with your submission. Please try again.");
+    }
+  };
 
   return (
     <div className="parallax">
@@ -34,34 +75,38 @@ const Contact = () => {
         <div className="container">
           <div className="git-cont row">
             <div className="col-12 col-sm-6 half">
-              <form action="https://formspree.io/f/xqkrlrqv" method="POST">
+              <form onSubmit={handleSubmit}>
                 <input
                   type="text"
-                  id="fname"
                   name="firstname"
                   placeholder="Your name"
                   required
+                  value={formState.firstname}
+                  onChange={handleChange}
                 ></input>
                 <input
-                  type="mail"
-                  id="mailid"
+                  type="email"
                   name="Email"
                   placeholder="Email Address"
                   required
+                  value={formState.Email}
+                  onChange={handleChange}
                 ></input>
                 <input
                   type="text"
-                  id="sub"
                   name="Subject"
                   placeholder="Subject"
                   required
+                  value={formState.Subject}
+                  onChange={handleChange}
                 ></input>
                 <textarea
-                  id="msg"
                   name="message"
                   placeholder="Message"
                   required
                   style={{ resize: "none" }}
+                  value={formState.message}
+                  onChange={handleChange}
                 ></textarea>
                 <button style={{ cursor: "pointer" }} type="submit">
                   Send Message
