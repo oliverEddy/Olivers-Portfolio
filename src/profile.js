@@ -137,8 +137,8 @@ const contact = {
 // Paste your respective social media links. You can omit any if you dont have it
 // Upload your resume in your drive, get the shaareable link and paste it in the resume section
 const social = {
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
+  github: "https://github.com/oliverEddy",
+  linkedin: "https://www.linkedin.com/in/oliver-eddy/",
   resume: "https://novoresume.com/",
 };
 // Dont change anything here
