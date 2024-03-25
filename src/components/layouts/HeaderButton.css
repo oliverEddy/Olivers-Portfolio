@@ -1,24 +1,4 @@
-.see {
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none; 
-  outline: none;
 
-  padding: 1rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  font-weight: 600;
-  font-size: 1.2rem;
-  border-radius: 0.188rem;
-
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-position: absolute;
-  text-align: center;
-  transform: translateX(-50%);
-  --offset: 3px; 
-  overflow: hidden; 
-  display: flex;
-}
 .see .text-icon-wrapper {
   position: relative; 
   z-index: 2; 
@@ -74,7 +54,27 @@ position: absolute;
   position: relative;
   z-index: 2; 
 }
+.see {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none; 
+  outline: none;
 
+  padding: 1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 0.188rem;
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  --offset: 3px; 
+  overflow: hidden; 
+  display: flex;
+}
 @keyframes rotate {
   from {
     transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
@@ -83,46 +83,34 @@ position: absolute;
     transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
   }
 }
-@media (max-width: 1260px)  {
+@media (max-width: 1028px)  {
   
   .see{
     font-size: 1.1rem;
-    padding: 0.8rem ;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.9rem ;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
   }}
 
-@media (max-width: 434px) {
+@media (max-width: 760px) {
     .see{
-      font-size: 1rem;
-      padding: 0.8rem ;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      font-size: 1.05rem;
+     
     }
     .see .fa-hand-point-down {
       font-size: 0.938rem;
     }
   }
   
-  @media (max-width: 365px) {
+  @media (max-width: 550px) {
     
     .see{
-      font-size: 0.85rem;
-      padding: 0.8rem ;
+      font-size: 1rem;
+      padding: 0.9rem ;
       padding-left: 1rem;
       padding-right: 1rem;
     }
     .see .fa-hand-point-down {
-      font-size: 0.813rem;
-    }
-  }
-  @media (max-width: 300px) {
-   
-    .see{
-      font-size: 0.75rem;
-    }
-  
-    .see .fa-hand-point-down {
-      font-size: 0.688rem;
+      font-size: 0.9rem;
     }
   }

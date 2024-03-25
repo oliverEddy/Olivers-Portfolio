@@ -204,9 +204,15 @@ textarea:focus {
     font-size: 0.88rem;
   }
 }
-
-@media (max-width: 360px) {
+@media (max-width: 550px) {
   .git-form {
-    max-width: 90%;
+    width: 85%;
+  }
+  .container {
+    padding: 0.5rem;
   }
 }
+@media (max-width: 420px) {
+.container {
+  padding: 0rem;
+}}

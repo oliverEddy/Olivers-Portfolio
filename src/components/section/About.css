@@ -46,7 +46,6 @@
 }
 .red-line {
   font-size: 45px;
-  margin: 10px;
   margin-left: 0;
 }
 .Photo {
@@ -229,3 +228,8 @@ font-size: 1.07rem !important;
 }
 }
 /*continue to scale mobile lay out down*/
+@media (max-width: 550px) {
+  .effect2 {
+    width: 88%;
+  }
+}
