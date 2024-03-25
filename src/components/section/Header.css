@@ -135,3 +135,15 @@
     font-size: 0.58rem;
   }
 }
+@media (max-height: 800px) {
+  .Header-grid {
+    grid-template-rows: 0.5fr 1fr 1fr 1fr; /* Adjust grid row sizing for a more compact layout */
+  }
+  
+}
+@media (max-height: 620px) {
+  .Header-grid {
+    grid-template-rows: 0fr 1fr 1fr 1fr; /* Adjust grid row sizing for a more compact layout */
+  }
+  
+}
