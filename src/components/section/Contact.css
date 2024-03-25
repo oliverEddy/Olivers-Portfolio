@@ -143,7 +143,7 @@ textarea:focus {
 }
 
 /* 1 between  @1500px */
-@media (max-width: 1260px) {
+@media (max-width: 1260px){
   .git-form {
     width: 650px;
     padding-left: 1rem;
@@ -216,3 +216,13 @@ textarea:focus {
 .container {
   padding: 0rem;
 }}
+
+
+@media (max-height: 680px) {
+  .git-form {
+    
+    max-height: 544px; /* Fixed height */
+    
+    overflow: auto; /* Enable scrolling for overflow */
+  }
+}
