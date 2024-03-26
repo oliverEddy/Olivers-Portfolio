@@ -1,5 +1,5 @@
 .third {
-  width: 1840px;
+  width: 1530px;
   min-height: 100vh;
   margin: 2.5% auto;
   margin-top: 5%;
@@ -21,11 +21,6 @@
   text-align: center;
 }
 
-@media (max-width: 2300px) {
-  .third {
-    width: 1530px;
-  }
-}
 
 @media (max-width: 1900px) {
   .third {
