@@ -164,7 +164,7 @@
 
   }
   .effect2 {
-    padding-top: 0;
+padding: 2rem;
   }
 .grid-item.Photo {
     margin: 0;
@@ -198,7 +198,7 @@
 
   }
   .effect2 {
-    padding-top: 0;
+padding: 2rem;
   }
  .grid-item.Photo {
     margin: 0;
@@ -256,7 +256,7 @@
 
   }
   .effect2 {
-    scroll-padding-top: 0;
+padding: 2rem;
   }
   .grid-item.Photo {
     margin: 0;
@@ -274,13 +274,19 @@
   .grid-container {
     grid-template-rows: 35% 65%;
    }
-
+   .lead.about-text {
+    font-size: clamp(1rem, 2vw, 1.11rem); /* Example: Minimum of 1rem, preferred size of 2vw, and maximum of 1.11rem */
+  }
+  
 
 }
 @media (min-width: 1028px) and (max-width: 1260px)and (max-height: 1180px) {
   .grid-item.about {
     padding-top: 0;
   }
+    .grid-container {
+    grid-template-rows: 35% 65%;
+   }
 }
 
 @media (max-width: 900px) {
