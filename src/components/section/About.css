@@ -155,7 +155,7 @@
   }
 
   .grid-container {
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 100%;
   }
   .grid-item.about {
     align-self: center; /* Centers the item vertically within its grid area */
