@@ -141,6 +141,13 @@ textarea:focus {
 .col-12.col-sm-6.half {
   padding: 0 0.938rem;
 }
+.CvButton {
+  display: flex;
+    justify-content: center;
+    align-items:baseline;
+    margin-top: 1.3rem;
+    align-self: end;
+}
 
 /* 1 between  @1500px */
 @media (max-width: 1260px){
@@ -177,6 +184,9 @@ textarea:focus {
     font-size: 0.9rem;
     padding: 0.625rem 1.25rem;
   }
+  .CvButton {
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 760px) {
@@ -202,6 +212,9 @@ textarea:focus {
   }
   .watermark {
     font-size: 0.88rem;
+  }
+  .CvButton {
+    display: none;
   }
 }
 @media (max-width: 550px) {
