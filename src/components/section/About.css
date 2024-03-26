@@ -11,11 +11,12 @@
 
   border-bottom: solid 0.5px #777 !important;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 .effect2:after,
 .effect2:before {
   z-index: -1;
-  position: absolute;
+  position: absolute; 
   content: "";
   bottom: 15px;
   left: 10px;
@@ -154,13 +155,13 @@
   }
 
   .grid-container {
-    grid-template-rows: 100%;
+    grid-template-rows: 10% 80% 10%;
   }
   .grid-item.about {
     align-self: center; /* Centers the item vertically within its grid area */
     height: auto; /* Override or remove the 100% height constraint */
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 2.5rem;
 
   }
   .effect2 {
@@ -194,7 +195,7 @@ padding: 2rem;
     align-self: center; /* Centers the item vertically within its grid area */
     height: auto; /* Override or remove the 100% height constraint */
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 2.5rem;
 
   }
   .effect2 {
@@ -252,7 +253,7 @@ padding: 2rem;
     align-self: center; /* Centers the item vertically within its grid area */
     height: auto; /* Override or remove the 100% height constraint */
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 2.5rem;
 
   }
   .effect2 {
@@ -274,9 +275,7 @@ padding: 2rem;
   .grid-container {
     grid-template-rows: 35% 65%;
    }
-   .lead.about-text {
-    font-size: clamp(1rem, 2vw, 1.11rem); /* Example: Minimum of 1rem, preferred size of 2vw, and maximum of 1.11rem */
-  }
+
   
 
 }
