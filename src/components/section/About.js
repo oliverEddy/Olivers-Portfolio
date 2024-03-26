@@ -16,12 +16,6 @@ const About = () => {
           <p className="lead about-text about-text-original">
             {about.paragraph}
           </p>
-          <div className="about-subcontainer-top">
-            <p className="lead about-text about-text-top">{about.paragraphTop}</p>
-          </div>
-          <div className="about-subcontainer-bottom">
-            <p className="lead about-text about-text-bottom">{about.paragraphBottom}</p>
-          </div>
         </div>
         <div className="grid-item skills" id="Skills">
           {skillsBar.map((x) => (
