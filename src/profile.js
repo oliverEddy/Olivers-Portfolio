@@ -124,7 +124,7 @@ const projects = [
 const section5Title = "Get in touch";
 const contact = {
   pitch: [
-    "What ever it might be about, feel free to reach out!",
+    "Whatever it might be about, feel free to reach out!",
     "You can contact me directly via linkedIn or fill out the email form."
   ],
   copyright: "Kaustubh Mishra",
