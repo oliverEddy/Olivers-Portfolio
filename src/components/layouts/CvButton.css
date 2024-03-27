@@ -12,7 +12,9 @@ font-weight: 550;
   border-radius: 0.75rem;
   
 }
-
+.cvButton:hover {
+  background-color: var(--hover-color);
+}
 
 .cvButton .fa-download  {
   color: #fff;
