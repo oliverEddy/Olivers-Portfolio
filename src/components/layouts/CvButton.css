@@ -1,0 +1,42 @@
+.cvButton {
+  background-color:  var(--primary-color);
+  color: white; 
+  border: none; 
+  padding: 0.8rem 2rem;
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 1.1rem; 
+font-weight: 550;
+  cursor: pointer; 
+  border-radius: 0.75rem;
+  
+}
+.cvButton:hover {
+  background-color: var(--hover-color);
+}
+
+.cvButton .fa-download  {
+  color: #fff;
+  font-size: 1.1rem !important;
+  color: #fff;
+  font-size: 1.25rem;
+  padding-top: 0.438rem;
+  padding-bottom: 0.438rem;
+  padding-left: 0.6rem;
+  padding-right: 0.438rem;
+  margin: 0;
+}
+@media (max-width: 1260px) {
+  .cvButton {
+    
+    font-weight: 500;
+    padding: 0.6rem 1.7rem;
+  }
+
+  .cvButton .fa-download {
+  
+
+   
+  }
+}

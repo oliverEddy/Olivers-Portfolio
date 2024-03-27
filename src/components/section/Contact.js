@@ -1,6 +1,7 @@
 import React from "react";
 import { contact, section5Title, social } from "../../profile";
 import "./Contact.css";
+import CvButton from "../layouts/CvButton";
 
 import { useState, useEffect } from "react";
 
@@ -75,8 +76,7 @@ const Contact = () => {
                     {line}
                     {index < contact.pitch.length - 1 && (
                       <>
-                        <br />
-                        <br />
+         
                       </>
                     )}
                   </React.Fragment>
@@ -105,13 +105,12 @@ const Contact = () => {
                       <i className="fab fa-github"></i>
                     </a>
                   )}
-                  {social.resume && (
-                    <a title="Download Resume" href={social.resume} download>
-                      <i className="fas fa-download"></i>
-                    </a>
-                  )}
+                
                 </div>
               </div>
+              <div className="CvButton">
+               <CvButton />
+             </div>
             </div>
           </div>
         </div>
